@@ -1,0 +1,4 @@
+pymodm=0.4.3
+viberbot=1.0.12
+fastapi=0.63.0
+libgen_api=0.3.0
