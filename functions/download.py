@@ -15,16 +15,16 @@ def download(book_title, book_ext, viber_request, url_download, background_tasks
     # import pdb; pdb.set_trace()
     if res.status_code == 200:
         viber.send_messages(viber_request.sender.id, TextMessage(text="Downloading"))
-        path ="/download/"
+        path = os.getcwd() + "/download/"
         name_book =book_title + "_" + str(time.time()) +"." + book_ext
 
         # try:
         # except Exception as e:
         #     import pdb; pdb.set_trace()
-
+        print("=================================================")
+        print(path)
         with open(path + name_book, 'wb') as f:
             f.write(res.content)
-
         viber.send_messages(viber_request.sender.id, TextMessage(text="Downloaded, we are processing the book to send it to you."))
         return name_book
     else:
