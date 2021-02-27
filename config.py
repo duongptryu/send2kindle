@@ -1,8 +1,10 @@
+import os
+
 COMMAND_LIST = ["/help", "/email", "/GET"]
-MONGO_URL = "mongodb+srv://duongpt:A201085a@send2kindle.p91gu.mongodb.net/chatbot?retryWrites=true&w=majority"
+MONGO_URL = os.environ.get("mongo_url")
 BOT_NAME = "Send2Kindle"
 AVATAR = "https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg"
-TOKEN = "4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca"
+TOKEN = os.environ.get('token')
 
 
 

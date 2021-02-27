@@ -71,6 +71,7 @@ def search(message, viber_request, background_tasks, viber):
             "BgColor": "#FFFFFF",
             "Buttons": []
         }
+        
         for index, book in enumerate(result[:3]):
             title_book = book['Title']
             name_book = title_book

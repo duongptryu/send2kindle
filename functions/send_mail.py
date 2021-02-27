@@ -6,7 +6,8 @@ from email import encoders
 import os
 from viberbot.api.messages.text_message import TextMessage
 
-fromaddr = "send2kindle.ncsc@gmail.com"
+fromaddr = os.environ.get('email')
+password = os.environ.get('password')
 
    
 msg = MIMEMultipart() 
@@ -25,7 +26,7 @@ def send_mail(name_book, user, viber, viber_request):
     msg.attach(p) 
     s = smtplib.SMTP('smtp.gmail.com', 587) 
     s.starttls() 
-    s.login(fromaddr, "!@#123456789aA")
+    s.login(fromaddr, password)
     text = msg.as_string()
     viber.send_messages(viber_request.sender.id, TextMessage(text="Sending the mail"))
     s.sendmail(fromaddr, toaddr, text)
