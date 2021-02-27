@@ -28,6 +28,5 @@ def send_mail(name_book, user, viber, viber_request):
     s.login(fromaddr, "!@#123456789aA")
     text = msg.as_string()
     viber.send_messages(viber_request.sender.id, TextMessage(text="Sending the mail"))
-    import pdb; pdb.set_trace()
     s.sendmail(fromaddr, toaddr, text)
     s.quit()

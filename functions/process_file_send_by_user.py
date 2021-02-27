@@ -30,6 +30,7 @@ def process(viber, viber_request):
                 except:
                     decrease_process(user)
                     return  viber.send_messages(viber_request.sender.id, TextMessage(text="Fail to convert"))
+                    delete(name_book)
             try:
                 send_mail(name_book, user, viber, viber_request)
                 viber.send_messages(viber_request.sender.id, TextMessage(text="Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended"))
