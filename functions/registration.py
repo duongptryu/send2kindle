@@ -9,7 +9,6 @@ def registration_update(viber_request, viber):
         return viber.send_messages(viber_request.sender.id, TextMessage(text="Email must be kindle mail, please check again"))
     kindle_email = kindle_email.group()
     try:
-        import pdb; pdb.set_trace()
         user = User.objects.get({'_id': viber_request.sender.id})
         if check_status(user) == False:
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Please comeback later, We are working on your previous request"))
