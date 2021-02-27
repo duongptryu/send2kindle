@@ -14,8 +14,8 @@ def download(book_title, book_ext, viber_request, url_download, background_tasks
     res = requests.get(url, allow_redirects=True)
     # import pdb; pdb.set_trace()
     if res.status_code == 200:
-        viber.send_messages(viber_request.sender.id, TextMessage(text="Downloading" ))
-        path = os.getcwd() + "\\download\\"
+        viber.send_messages(viber_request.sender.id, TextMessage(text="Downloading"))
+        path ="/download/"
         name_book =book_title + "_" + str(time.time()) +"." + book_ext
 
         # try:
