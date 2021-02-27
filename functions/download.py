@@ -84,7 +84,7 @@ def pre_download(message,viber_request, background_tasks, viber):
                     name_book = new_name
                 except:
                     decrease_process(user)
-                    return  viber.send_messages(viber_request.sender.id, TextMessage(text="Fail to convert"))
+                    return  viber.send_messages(viber_request.sender.id, TextMessage(text="Fail to convert, please try again"))
         except:
             decrease_process(user)
             return  viber.send_messages(viber_request.sender.id, TextMessage(text="Couldn't download, please try again"))

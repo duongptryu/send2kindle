@@ -2161,3 +2161,877 @@ parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614360734
 received request. post data: b'{"event":"seen","timestamp":1614360745941,"chat_hostname":"SN-CHAT-03_","message_token":5546140585572066238,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
 parsing request
 parsed request=ViberSeenRequest [event_type=seen, timestamp=1614360745941, message_token=5546140585572066238, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Started server process [9172]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"webhook","timestamp":1614422119726,"chat_hostname":"SN-CHAT-03_","message_token":5546398055812974773}'
+parsing request
+parsed request=event_type=webhook, timestamp=1614422119726
+received request. post data: b'{"event":"message","timestamp":1614422123358,"chat_hostname":"SN-CHAT-03_","message_token":5546398071554919913,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"python","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614422123358, message_token=5546398071554919913, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=python], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are processing], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please wait a seconds, we are processing', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422124752,"chat_hostname":"SN-CHAT-03_","message_token":5546398075744313852,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422124752, message_token=5546398075744313852, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422124754,"chat_hostname":"SN-CHAT-03_","message_token":5546398075744313852,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422124754, message_token=5546398075744313852, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422124837,"chat_hostname":"SN-CHAT-08_","message_token":5546398075744313852,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422124837, message_token=5546398075744313852, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are searching the book with title 'python'], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Please wait a seconds, we are searching the book with title 'python'", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Starting new HTTP connection (1): gen.lib.rus.ec:80
+received request. post data: b'{"event":"delivered","timestamp":1614422127329,"chat_hostname":"SN-CHAT-03_","message_token":5546398086544646090,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422127329, message_token=5546398086544646090, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422127333,"chat_hostname":"SN-CHAT-03_","message_token":5546398086544646090,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422127333, message_token=5546398086544646090, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422127412,"chat_hostname":"SN-CHAT-08_","message_token":5546398086544646090,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422127412, message_token=5546398086544646090, user_id=vCrVBOgvfyl0odAzKtwayw==]
+http://gen.lib.rus.ec:80 "GET /search.php?req=python&column=title HTTP/1.1" 301 178
+Starting new HTTP connection (1): libgen.rs:80
+http://libgen.rs:80 "GET /search.php?req=python&column=title HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/AEE7239FFCF7871E1D6687CED1215E22 HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/8B7F9439FF75AEAC89B8748BDBC1E1D3 HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/8288FDBD7E6D373ACCBC9D274FF42B29 HTTP/1.1" 200 None
+going to send messages: RichMediaMessage [tracking_data=None, keyboard=None, min_api_version=2, rich_media={'ButtonsGroupColumns': 6, 'ButtonsGroupRows': 7, 'BgColor': '#FFFFFF', 'Buttons': [{'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Image': 'http://library.lol/covers/0/aee7239ffcf7871e1d6687ced1215e22-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#323232"><b>Exploring Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Markus Nix</font><br>Ext: <font color="#de1200">djvu</font>        Size: 2 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Image': 'http://library.lol/covers/1000/8b7f9439ff75aeac89b8748bdbc1e1d3-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#323232"><b>Beginning Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Peter C. Norton,A ...</font><br>Ext: <font color="#de1200">pdf</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Image': 'http://library.lol/covers/1000/8288fdbd7e6d373accbc9d274ff42b29-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#323232"><b>Python essential reference</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>David Beazley</font><br>Ext: <font color="#de1200">djvu</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}]}], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'min_api_version': 2, 'alt_text': 'upgrade now!', 'type': 'rich_media', 'rich_media': {'ButtonsGroupColumns': 6, 'ButtonsGroupRows': 7, 'BgColor': '#FFFFFF', 'Buttons': [{'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Image': 'http://library.lol/covers/0/aee7239ffcf7871e1d6687ced1215e22-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#323232"><b>Exploring Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Markus Nix</font><br>Ext: <font color="#de1200">djvu</font>        Size: 2 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Image': 'http://library.lol/covers/1000/8b7f9439ff75aeac89b8748bdbc1e1d3-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#323232"><b>Beginning Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Peter C. Norton,A ...</font><br>Ext: <font color="#de1200">pdf</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Image': 'http://library.lol/covers/1000/8288fdbd7e6d373accbc9d274ff42b29-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#323232"><b>Python essential reference</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>David Beazley</font><br>Ext: <font color="#de1200">djvu</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}]}, 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Click to GET button to get book to the kindle mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Click to GET button to get book to the kindle mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614422133287,"chat_hostname":"SN-CHAT-03_","message_token":5546398111576244484,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422133287, message_token=5546398111576244484, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422133288,"chat_hostname":"SN-CHAT-03_","message_token":5546398111576244484,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422133288, message_token=5546398111576244484, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422133660,"chat_hostname":"SN-CHAT-08_","message_token":5546398111576244484,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422133660, message_token=5546398111576244484, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422134275,"chat_hostname":"SN-CHAT-03_","message_token":5546398115770555727,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422134275, message_token=5546398115770555727, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422134274,"chat_hostname":"SN-CHAT-03_","message_token":5546398115770555727,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422134274, message_token=5546398115770555727, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422134499,"chat_hostname":"SN-CHAT-08_","message_token":5546398115770555727,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422134499, message_token=5546398115770555727, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614422147527,"chat_hostname":"SN-CHAT-03_","message_token":5546398172889304567,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"/GET 1","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614422147527, message_token=5546398172889304567, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=/GET 1], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=We are processing, please wait a seconds], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'We are processing, please wait a seconds', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422149182,"chat_hostname":"SN-CHAT-03_","message_token":5546398178257293927,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422149182, message_token=5546398178257293927, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTP connection (1): library.lol:80
+received request. post data: b'{"event":"delivered","timestamp":1614422149185,"chat_hostname":"SN-CHAT-03_","message_token":5546398178257293927,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422149185, message_token=5546398178257293927, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422149209,"chat_hostname":"SN-CHAT-08_","message_token":5546398178257293927,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422149209, message_token=5546398178257293927, user_id=vCrVBOgvfyl0odAzKtwayw==]
+http://library.lol:80 "GET /main/AEE7239FFCF7871E1D6687CED1215E22 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): cloudflare-ipfs.com:443
+https://cloudflare-ipfs.com:443 "GET /ipfs/bafykbzaceamdg5wfzntmihwzyezaxjv2d3gymmuipli6xw6lqdtdbzhtjn3ye?filename=Markus%20Nix%20-%20Exploring%20Python-Entwickler%20%282005%29.djvu HTTP/1.1" 200 None
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloading], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloading', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloaded, we are processing the book to send it to you.], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloaded, we are processing the book to send it to you.', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614422152945,"chat_hostname":"SN-CHAT-03_","message_token":5546398193985934112,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422152945, message_token=5546398193985934112, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422152941,"chat_hostname":"SN-CHAT-03_","message_token":5546398193985934112,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422152941, message_token=5546398193985934112, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converting], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converting', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614422153901,"chat_hostname":"SN-CHAT-03_","message_token":5546398198066988412,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422153901, message_token=5546398198066988412, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422153902,"chat_hostname":"SN-CHAT-03_","message_token":5546398198066988412,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422153902, message_token=5546398198066988412, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422154945,"chat_hostname":"SN-CHAT-03_","message_token":5546398202412289784,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422154945, message_token=5546398202412289784, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422154947,"chat_hostname":"SN-CHAT-03_","message_token":5546398202412289784,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422154947, message_token=5546398202412289784, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converted], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converted', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Fail to convert, please try again], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Fail to convert, please try again', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614422160713,"chat_hostname":"SN-CHAT-03_","message_token":5546398226634392268,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422160713, message_token=5546398226634392268, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422160715,"chat_hostname":"SN-CHAT-03_","message_token":5546398226634392268,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422160715, message_token=5546398226634392268, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422161942,"chat_hostname":"SN-CHAT-03_","message_token":5546398231759837831,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422161942, message_token=5546398231759837831, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422161942,"chat_hostname":"SN-CHAT-03_","message_token":5546398231759837831,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422161942, message_token=5546398231759837831, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422163705,"chat_hostname":"SN-CHAT-08_","message_token":5546398193985934112,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422163705, message_token=5546398193985934112, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422163741,"chat_hostname":"SN-CHAT-08_","message_token":5546398198066988412,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422163741, message_token=5546398198066988412, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422163911,"chat_hostname":"SN-CHAT-08_","message_token":5546398202412289784,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422163911, message_token=5546398202412289784, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422164260,"chat_hostname":"SN-CHAT-08_","message_token":5546398198066988412,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422164260, message_token=5546398198066988412, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422163941,"chat_hostname":"SN-CHAT-08_","message_token":5546398226634392268,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422163941, message_token=5546398226634392268, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422163993,"chat_hostname":"SN-CHAT-08_","message_token":5546398231759837831,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422163993, message_token=5546398231759837831, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422164009,"chat_hostname":"SN-CHAT-08_","message_token":5546398193985934112,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422164009, message_token=5546398193985934112, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Shutting down
+Waiting for application shutdown.
+Application shutdown complete.
+Finished server process [9172]
+Started server process [8460]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"message","timestamp":1614422623792,"chat_hostname":"SN-CHAT-03_","message_token":5546400170510471056,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"python","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614422623792, message_token=5546400170510471056, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=python], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are processing], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please wait a seconds, we are processing', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422625637,"chat_hostname":"SN-CHAT-03_","message_token":5546400176587295905,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422625637, message_token=5546400176587295905, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422625642,"chat_hostname":"SN-CHAT-03_","message_token":5546400176587295905,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422625642, message_token=5546400176587295905, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422626187,"chat_hostname":"SN-CHAT-08_","message_token":5546400176587295905,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422626187, message_token=5546400176587295905, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are searching the book with title 'python'], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Please wait a seconds, we are searching the book with title 'python'", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Starting new HTTP connection (1): gen.lib.rus.ec:80
+received request. post data: b'{"event":"seen","timestamp":1614422628124,"chat_hostname":"SN-CHAT-03_","message_token":5546400187018534193,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422628124, message_token=5546400187018534193, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422628124,"chat_hostname":"SN-CHAT-03_","message_token":5546400187018534193,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422628124, message_token=5546400187018534193, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422628181,"chat_hostname":"SN-CHAT-08_","message_token":5546400187018534193,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422628181, message_token=5546400187018534193, user_id=vCrVBOgvfyl0odAzKtwayw==]
+http://gen.lib.rus.ec:80 "GET /search.php?req=python&column=title HTTP/1.1" 301 178
+Starting new HTTP connection (1): libgen.rs:80
+http://libgen.rs:80 "GET /search.php?req=python&column=title HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/AEE7239FFCF7871E1D6687CED1215E22 HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/8B7F9439FF75AEAC89B8748BDBC1E1D3 HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/8288FDBD7E6D373ACCBC9D274FF42B29 HTTP/1.1" 200 None
+going to send messages: RichMediaMessage [tracking_data=None, keyboard=None, min_api_version=2, rich_media={'ButtonsGroupColumns': 6, 'ButtonsGroupRows': 7, 'BgColor': '#FFFFFF', 'Buttons': [{'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Image': 'http://library.lol/covers/0/aee7239ffcf7871e1d6687ced1215e22-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#323232"><b>Exploring Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Markus Nix</font><br>Ext: <font color="#de1200">djvu</font>        Size: 2 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Image': 'http://library.lol/covers/1000/8b7f9439ff75aeac89b8748bdbc1e1d3-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#323232"><b>Beginning Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Peter C. Norton,A ...</font><br>Ext: <font color="#de1200">pdf</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Image': 'http://library.lol/covers/1000/8288fdbd7e6d373accbc9d274ff42b29-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#323232"><b>Python essential reference</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>David Beazley</font><br>Ext: <font color="#de1200">djvu</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}]}], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'min_api_version': 2, 'alt_text': 'upgrade now!', 'type': 'rich_media', 'rich_media': {'ButtonsGroupColumns': 6, 'ButtonsGroupRows': 7, 'BgColor': '#FFFFFF', 'Buttons': [{'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Image': 'http://library.lol/covers/0/aee7239ffcf7871e1d6687ced1215e22-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#323232"><b>Exploring Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Markus Nix</font><br>Ext: <font color="#de1200">djvu</font>        Size: 2 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Image': 'http://library.lol/covers/1000/8b7f9439ff75aeac89b8748bdbc1e1d3-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#323232"><b>Beginning Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Peter C. Norton,A ...</font><br>Ext: <font color="#de1200">pdf</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Image': 'http://library.lol/covers/1000/8288fdbd7e6d373accbc9d274ff42b29-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#323232"><b>Python essential reference</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>David Beazley</font><br>Ext: <font color="#de1200">djvu</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}]}, 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Click to GET button to get book to the kindle mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Click to GET button to get book to the kindle mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614422633958,"chat_hostname":"SN-CHAT-03_","message_token":5546400211563602743,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422633958, message_token=5546400211563602743, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422633960,"chat_hostname":"SN-CHAT-03_","message_token":5546400211563602743,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422633960, message_token=5546400211563602743, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422634208,"chat_hostname":"SN-CHAT-08_","message_token":5546400211563602743,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422634208, message_token=5546400211563602743, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422635159,"chat_hostname":"SN-CHAT-03_","message_token":5546400215632075289,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422635159, message_token=5546400215632075289, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422635160,"chat_hostname":"SN-CHAT-03_","message_token":5546400215632075289,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422635160, message_token=5546400215632075289, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422635741,"chat_hostname":"SN-CHAT-08_","message_token":5546400215632075289,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422635741, message_token=5546400215632075289, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614422637334,"chat_hostname":"SN-CHAT-03_","message_token":5546400227234237896,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"/GET 1","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614422637334, message_token=5546400227234237896, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=/GET 1], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=We are processing, please wait a seconds], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'We are processing, please wait a seconds', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422638717,"chat_hostname":"SN-CHAT-03_","message_token":5546400231507509492,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422638717, message_token=5546400231507509492, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422638719,"chat_hostname":"SN-CHAT-03_","message_token":5546400231507509492,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422638719, message_token=5546400231507509492, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422638815,"chat_hostname":"SN-CHAT-08_","message_token":5546400231507509492,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422638815, message_token=5546400231507509492, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/AEE7239FFCF7871E1D6687CED1215E22 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): cloudflare-ipfs.com:443
+https://cloudflare-ipfs.com:443 "GET /ipfs/bafykbzaceamdg5wfzntmihwzyezaxjv2d3gymmuipli6xw6lqdtdbzhtjn3ye?filename=Markus%20Nix%20-%20Exploring%20Python-Entwickler%20%282005%29.djvu HTTP/1.1" 200 None
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloading], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloading', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloaded, we are processing the book to send it to you.], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloaded, we are processing the book to send it to you.', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614422641810,"chat_hostname":"SN-CHAT-03_","message_token":5546400244484686254,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422641810, message_token=5546400244484686254, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422641809,"chat_hostname":"SN-CHAT-03_","message_token":5546400244484686254,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422641809, message_token=5546400244484686254, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422641971,"chat_hostname":"SN-CHAT-08_","message_token":5546400244484686254,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422641971, message_token=5546400244484686254, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converting], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converting', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614422642839,"chat_hostname":"SN-CHAT-03_","message_token":5546400248775468484,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422642839, message_token=5546400248775468484, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422642841,"chat_hostname":"SN-CHAT-03_","message_token":5546400248775468484,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422642841, message_token=5546400248775468484, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422642921,"chat_hostname":"SN-CHAT-08_","message_token":5546400248775468484,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422642921, message_token=5546400248775468484, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422643808,"chat_hostname":"SN-CHAT-03_","message_token":5546400252822970702,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422643808, message_token=5546400252822970702, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422643806,"chat_hostname":"SN-CHAT-03_","message_token":5546400252822970702,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422643806, message_token=5546400252822970702, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422644025,"chat_hostname":"SN-CHAT-08_","message_token":5546400252822970702,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422644025, message_token=5546400252822970702, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converted], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converted', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422647498,"chat_hostname":"SN-CHAT-03_","message_token":5546400268136371554,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422647498, message_token=5546400268136371554, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Shutting down
+Waiting for background tasks to complete. (CTRL+C to force quit)
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Fail to convert, please try again], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Fail to convert, please try again', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+Finished server process [8460]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<LifespanOn.main() running at c:\programdata\miniconda3\lib\site-packages\uvicorn\lifespan\on.py:55> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000157181A8790>()]>>
+ASGI 'lifespan' protocol appears unsupported.
+Started server process [3196]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"delivered","timestamp":1614422716581,"chat_hostname":"SN-CHAT-01_","message_token":5546400390190621907,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422716581, message_token=5546400390190621907, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422716786,"chat_hostname":"SN-CHAT-01_","message_token":5546400390190621907,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422716786, message_token=5546400390190621907, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422665958,"chat_hostname":"SN-CHAT-08_","message_token":5546400268136371554,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422665958, message_token=5546400268136371554, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422666180,"chat_hostname":"SN-CHAT-08_","message_token":5546400268136371554,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422666180, message_token=5546400268136371554, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422676580,"chat_hostname":"SN-CHAT-03_","message_token":5546400390190621907,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422676580, message_token=5546400390190621907, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422676786,"chat_hostname":"SN-CHAT-08_","message_token":5546400390190621907,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422676786, message_token=5546400390190621907, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422705958,"chat_hostname":"SN-CHAT-01_","message_token":5546400268136371554,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422705958, message_token=5546400268136371554, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Shutting down
+Waiting for application shutdown.
+Application shutdown complete.
+Finished server process [3196]
+Started server process [9200]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"seen","timestamp":1614422802761,"chat_hostname":"SN-CHAT-03_","message_token":5546400390190621907,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422802761, message_token=5546400390190621907, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614422877845,"chat_hostname":"SN-CHAT-03_","message_token":5546401236077595786,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"python","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614422877845, message_token=5546401236077595786, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=python], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are processing], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please wait a seconds, we are processing', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422879559,"chat_hostname":"SN-CHAT-03_","message_token":5546401241617553514,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422879559, message_token=5546401241617553514, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422879560,"chat_hostname":"SN-CHAT-03_","message_token":5546401241617553514,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422879560, message_token=5546401241617553514, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422880262,"chat_hostname":"SN-CHAT-08_","message_token":5546401241617553514,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422880262, message_token=5546401241617553514, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are searching the book with title 'python'], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Please wait a seconds, we are searching the book with title 'python'", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422882080,"chat_hostname":"SN-CHAT-03_","message_token":5546401252174618269,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422882080, message_token=5546401252174618269, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422882080,"chat_hostname":"SN-CHAT-03_","message_token":5546401252174618269,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422882080, message_token=5546401252174618269, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422882153,"chat_hostname":"SN-CHAT-08_","message_token":5546401252174618269,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422882153, message_token=5546401252174618269, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTP connection (1): gen.lib.rus.ec:80
+http://gen.lib.rus.ec:80 "GET /search.php?req=python&column=title HTTP/1.1" 301 178
+Starting new HTTP connection (1): libgen.rs:80
+http://libgen.rs:80 "GET /search.php?req=python&column=title HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/AEE7239FFCF7871E1D6687CED1215E22 HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/8B7F9439FF75AEAC89B8748BDBC1E1D3 HTTP/1.1" 200 None
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/8288FDBD7E6D373ACCBC9D274FF42B29 HTTP/1.1" 200 None
+going to send messages: RichMediaMessage [tracking_data=None, keyboard=None, min_api_version=2, rich_media={'ButtonsGroupColumns': 6, 'ButtonsGroupRows': 7, 'BgColor': '#FFFFFF', 'Buttons': [{'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Image': 'http://library.lol/covers/0/aee7239ffcf7871e1d6687ced1215e22-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#323232"><b>Exploring Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Markus Nix</font><br>Ext: <font color="#de1200">djvu</font>        Size: 2 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Image': 'http://library.lol/covers/1000/8b7f9439ff75aeac89b8748bdbc1e1d3-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#323232"><b>Beginning Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Peter C. Norton,A ...</font><br>Ext: <font color="#de1200">pdf</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Image': 'http://library.lol/covers/1000/8288fdbd7e6d373accbc9d274ff42b29-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#323232"><b>Python essential reference</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>David Beazley</font><br>Ext: <font color="#de1200">djvu</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}]}], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'min_api_version': 2, 'alt_text': 'upgrade now!', 'type': 'rich_media', 'rich_media': {'ButtonsGroupColumns': 6, 'ButtonsGroupRows': 7, 'BgColor': '#FFFFFF', 'Buttons': [{'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Image': 'http://library.lol/covers/0/aee7239ffcf7871e1d6687ced1215e22-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#323232"><b>Exploring Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Markus Nix</font><br>Ext: <font color="#de1200">djvu</font>        Size: 2 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 1', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Image': 'http://library.lol/covers/1000/8b7f9439ff75aeac89b8748bdbc1e1d3-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#323232"><b>Beginning Python</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>Peter C. Norton,A ...</font><br>Ext: <font color="#de1200">pdf</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 2', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}, {'Columns': 6, 'Rows': 4, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Image': 'http://library.lol/covers/1000/8288fdbd7e6d373accbc9d274ff42b29-d.jpg'}, {'Columns': 6, 'Rows': 2, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#323232"><b>Python essential reference</b></font><font color="#777777"><br>Author: </font><font color=#6fc133>David Beazley</font><br>Ext: <font color="#de1200">djvu</font>        Size: 4 Mb', 'TextSize': 'medium', 'TextVAlign': 'middle', 'TextHAlign': 'left', 'BgColor': '#a0b1d9'}, {'Columns': 6, 'Rows': 1, 'ActionType': 'reply', 'ActionBody': '/GET 3', 'Text': '<font color="#f50000"><b>GET</b></font>', 'TextSize': 'large', 'TextVAlign': 'middle', 'TextHAlign': 'middle', 'BgColor': '#e9f500'}]}, 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Click to GET button to get book to the kindle mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Click to GET button to get book to the kindle mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614422888646,"chat_hostname":"SN-CHAT-03_","message_token":5546401279798297199,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422888646, message_token=5546401279798297199, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422888649,"chat_hostname":"SN-CHAT-03_","message_token":5546401279798297199,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422888649, message_token=5546401279798297199, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422888865,"chat_hostname":"SN-CHAT-08_","message_token":5546401279798297199,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422888865, message_token=5546401279798297199, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422889611,"chat_hostname":"SN-CHAT-03_","message_token":5546401283816440479,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422889611, message_token=5546401283816440479, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422889614,"chat_hostname":"SN-CHAT-03_","message_token":5546401283816440479,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422889614, message_token=5546401283816440479, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422889639,"chat_hostname":"SN-CHAT-08_","message_token":5546401283816440479,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422889639, message_token=5546401283816440479, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614422890927,"chat_hostname":"SN-CHAT-03_","message_token":5546401290939092614,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"/GET 1","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614422890927, message_token=5546401290939092614, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=/GET 1], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=We are processing, please wait a seconds], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'We are processing, please wait a seconds', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614422892345,"chat_hostname":"SN-CHAT-03_","message_token":5546401295313031654,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422892345, message_token=5546401295313031654, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422892346,"chat_hostname":"SN-CHAT-03_","message_token":5546401295313031654,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422892346, message_token=5546401295313031654, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422892446,"chat_hostname":"SN-CHAT-08_","message_token":5546401295313031654,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422892446, message_token=5546401295313031654, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTP connection (1): library.lol:80
+http://library.lol:80 "GET /main/AEE7239FFCF7871E1D6687CED1215E22 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): cloudflare-ipfs.com:443
+https://cloudflare-ipfs.com:443 "GET /ipfs/bafykbzaceamdg5wfzntmihwzyezaxjv2d3gymmuipli6xw6lqdtdbzhtjn3ye?filename=Markus%20Nix%20-%20Exploring%20Python-Entwickler%20%282005%29.djvu HTTP/1.1" 200 None
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloading], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloading', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloaded, we are processing the book to send it to you.], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloaded, we are processing the book to send it to you.', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614422895333,"chat_hostname":"SN-CHAT-03_","message_token":5546401307686229475,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422895333, message_token=5546401307686229475, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422895335,"chat_hostname":"SN-CHAT-03_","message_token":5546401307686229475,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422895335, message_token=5546401307686229475, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422895426,"chat_hostname":"SN-CHAT-08_","message_token":5546401307686229475,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422895426, message_token=5546401307686229475, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converting], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converting', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614422896368,"chat_hostname":"SN-CHAT-03_","message_token":5546401312107030294,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422896368, message_token=5546401312107030294, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422896362,"chat_hostname":"SN-CHAT-03_","message_token":5546401312107030294,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422896362, message_token=5546401312107030294, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422896679,"chat_hostname":"SN-CHAT-08_","message_token":5546401312107030294,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422896679, message_token=5546401312107030294, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422897320,"chat_hostname":"SN-CHAT-03_","message_token":5546401316179692395,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422897320, message_token=5546401316179692395, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422897322,"chat_hostname":"SN-CHAT-03_","message_token":5546401316179692395,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422897322, message_token=5546401316179692395, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422897856,"chat_hostname":"SN-CHAT-08_","message_token":5546401316179692395,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422897856, message_token=5546401316179692395, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converted], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converted', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422900971,"chat_hostname":"SN-CHAT-03_","message_token":5546401331367269156,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422900971, message_token=5546401331367269156, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422901053,"chat_hostname":"SN-CHAT-08_","message_token":5546401331367269156,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422901053, message_token=5546401331367269156, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422902012,"chat_hostname":"SN-CHAT-03_","message_token":5546401331367269156,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422902012, message_token=5546401331367269156, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Sending the mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Sending the mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614422904262,"chat_hostname":"SN-CHAT-03_","message_token":5546401345212668342,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422904262, message_token=5546401345212668342, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422904542,"chat_hostname":"SN-CHAT-08_","message_token":5546401345212668342,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422904542, message_token=5546401345212668342, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614422906052,"chat_hostname":"SN-CHAT-03_","message_token":5546401345212668342,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614422906052, message_token=5546401345212668342, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Shutting down
+Waiting for application shutdown.
+Application shutdown complete.
+Finished server process [9200]
+Started server process [8340]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"webhook","timestamp":1614422990995,"chat_hostname":"SN-CHAT-01_","message_token":5546401710180024445}'
+parsing request
+parsed request=event_type=webhook, timestamp=1614422990995
+received request. post data: b'{"event":"delivered","timestamp":1614422947928,"chat_hostname":"SN-CHAT-01_","message_token":5546401360609958518,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422947928, message_token=5546401360609958518, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614422948539,"chat_hostname":"SN-CHAT-01_","message_token":5546401360609958518,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614422948539, message_token=5546401360609958518, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614423012023,"chat_hostname":"SN-CHAT-03_","message_token":5546401798860918071,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"type":"file","media":"https://dl-media.viber.com/6/media/2/short/any/def/file/0x0/ad1d/3757ae4f3087cf9936f9069d29f125d9d6b3c8adf143529dacf0551f89fcad1d?Expires=1614426612&Signature=afTzPpTRcUZMpWiSNqEEZcbQt-djnt64ViE8kFg6fC7NRwjAKpLFnGlyXlj1A7TETZj3TpS7Gwp4YZHcF3IqEL0u3Dxn2-PTA9zp6svctDGGheBuRNI16hTK6vccXgcXJtGBjHpLXfBypRc03i5G4THPEJs1Asvn4UW6~SaW46QtNXs65zjtMNYzn28ELmMgVf0ZWTXbAheKhqMpBcYO6o83BhJA-uf2ZvV5Yyqnyxh2a6TkAIB4ABZHhH1Cg1408RXACtLPiGYMNemN9g7O8MH6wVMW~CdwBbat2kX61SktgwdW~jWOeIjayugt2-bDircp7oaoruLjMk3kIVmcoA__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA","file_name":"Preiss B.R. - Data structures and algorithms in Python (2004).chm","size":3505698},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614423012023, message_token=5546401798860918071, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=FileMessage [tracking_data=None, keyboard=None, min_api_version=None, media=https://dl-media.viber.com/6/media/2/short/any/def/file/0x0/ad1d/3757ae4f3087cf9936f9069d29f125d9d6b3c8adf143529dacf0551f89fcad1d?Expires=1614426612&Signature=afTzPpTRcUZMpWiSNqEEZcbQt-djnt64ViE8kFg6fC7NRwjAKpLFnGlyXlj1A7TETZj3TpS7Gwp4YZHcF3IqEL0u3Dxn2-PTA9zp6svctDGGheBuRNI16hTK6vccXgcXJtGBjHpLXfBypRc03i5G4THPEJs1Asvn4UW6~SaW46QtNXs65zjtMNYzn28ELmMgVf0ZWTXbAheKhqMpBcYO6o83BhJA-uf2ZvV5Yyqnyxh2a6TkAIB4ABZHhH1Cg1408RXACtLPiGYMNemN9g7O8MH6wVMW~CdwBbat2kX61SktgwdW~jWOeIjayugt2-bDircp7oaoruLjMk3kIVmcoA__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA, size=3505698, file_name=Preiss B.R. - Data structures and algorithms in Python (2004).chm], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=We are processing, please wait a seconds], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'We are processing, please wait a seconds', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614423013782,"chat_hostname":"SN-CHAT-03_","message_token":5546401804656722363,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423013782, message_token=5546401804656722363, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423013786,"chat_hostname":"SN-CHAT-03_","message_token":5546401804656722363,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423013786, message_token=5546401804656722363, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTPS connection (1): dl-media.viber.com:443
+https://dl-media.viber.com:443 "GET /6/media/2/short/any/def/file/0x0/ad1d/3757ae4f3087cf9936f9069d29f125d9d6b3c8adf143529dacf0551f89fcad1d?Expires=1614426612&Signature=afTzPpTRcUZMpWiSNqEEZcbQt-djnt64ViE8kFg6fC7NRwjAKpLFnGlyXlj1A7TETZj3TpS7Gwp4YZHcF3IqEL0u3Dxn2-PTA9zp6svctDGGheBuRNI16hTK6vccXgcXJtGBjHpLXfBypRc03i5G4THPEJs1Asvn4UW6~SaW46QtNXs65zjtMNYzn28ELmMgVf0ZWTXbAheKhqMpBcYO6o83BhJA-uf2ZvV5Yyqnyxh2a6TkAIB4ABZHhH1Cg1408RXACtLPiGYMNemN9g7O8MH6wVMW~CdwBbat2kX61SktgwdW~jWOeIjayugt2-bDircp7oaoruLjMk3kIVmcoA__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA HTTP/1.1" 200 3505698
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloading], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloading', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloaded, we are processing the book to send it to you.], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloaded, we are processing the book to send it to you.', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614423019295,"chat_hostname":"SN-CHAT-03_","message_token":5546401827729591944,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423019295, message_token=5546401827729591944, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423019291,"chat_hostname":"SN-CHAT-03_","message_token":5546401827729591944,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423019291, message_token=5546401827729591944, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converting], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converting', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614423020220,"chat_hostname":"SN-CHAT-03_","message_token":5546401831697401579,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423020220, message_token=5546401831697401579, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423020224,"chat_hostname":"SN-CHAT-03_","message_token":5546401831697401579,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423020224, message_token=5546401831697401579, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423021194,"chat_hostname":"SN-CHAT-03_","message_token":5546401835673607335,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423021194, message_token=5546401835673607335, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423021190,"chat_hostname":"SN-CHAT-03_","message_token":5546401835673607335,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423021190, message_token=5546401835673607335, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423032224,"chat_hostname":"SN-CHAT-08_","message_token":5546401804656722363,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423032224, message_token=5546401804656722363, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423035160,"chat_hostname":"SN-CHAT-08_","message_token":5546401835673607335,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423035160, message_token=5546401835673607335, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423035373,"chat_hostname":"SN-CHAT-08_","message_token":5546401831697401579,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423035373, message_token=5546401831697401579, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423035374,"chat_hostname":"SN-CHAT-08_","message_token":5546401827729591944,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423035374, message_token=5546401827729591944, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614423156388,"chat_hostname":"SN-CHAT-03_","message_token":5546402404409364413,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"asd","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614423156388, message_token=5546402404409364413, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=asd], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are processing], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please wait a seconds, we are processing', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please comeback later, We are working on your previous request], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please comeback later, We are working on your previous request', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614423158274,"chat_hostname":"SN-CHAT-03_","message_token":5546402410452633125,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423158274, message_token=5546402410452633125, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423158609,"chat_hostname":"SN-CHAT-08_","message_token":5546402410452633125,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423158609, message_token=5546402410452633125, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423159497,"chat_hostname":"SN-CHAT-03_","message_token":5546402415737460500,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423159497, message_token=5546402415737460500, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423160660,"chat_hostname":"SN-CHAT-08_","message_token":5546402415737460500,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423160660, message_token=5546402415737460500, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423161952,"chat_hostname":"SN-CHAT-03_","message_token":5546402415737460500,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423161952, message_token=5546402415737460500, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Sending the mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Sending the mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614423191497,"chat_hostname":"SN-CHAT-03_","message_token":5546402549959378203,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423191497, message_token=5546402549959378203, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423191499,"chat_hostname":"SN-CHAT-03_","message_token":5546402549959378203,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423191499, message_token=5546402549959378203, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423192009,"chat_hostname":"SN-CHAT-08_","message_token":5546402549959378203,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423192009, message_token=5546402549959378203, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614423267312,"chat_hostname":"SN-CHAT-03_","message_token":5546402869641563820,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"ghj","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614423267312, message_token=5546402869641563820, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=ghj], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are processing], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please wait a seconds, we are processing', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please comeback later, We are working on your previous request], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please comeback later, We are working on your previous request', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614423269158,"chat_hostname":"SN-CHAT-03_","message_token":5546402875710000024,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423269158, message_token=5546402875710000024, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423269154,"chat_hostname":"SN-CHAT-03_","message_token":5546402875710000024,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423269154, message_token=5546402875710000024, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423269233,"chat_hostname":"SN-CHAT-08_","message_token":5546402875710000024,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423269233, message_token=5546402875710000024, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423270413,"chat_hostname":"SN-CHAT-03_","message_token":5546402880999021192,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423270413, message_token=5546402880999021192, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423270412,"chat_hostname":"SN-CHAT-03_","message_token":5546402880999021192,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423270412, message_token=5546402880999021192, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423270476,"chat_hostname":"SN-CHAT-08_","message_token":5546402880999021192,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423270476, message_token=5546402880999021192, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614423281709,"chat_hostname":"SN-CHAT-03_","message_token":5546402928361100237,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423281709, message_token=5546402928361100237, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423281711,"chat_hostname":"SN-CHAT-03_","message_token":5546402928361100237,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423281711, message_token=5546402928361100237, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423281748,"chat_hostname":"SN-CHAT-08_","message_token":5546402928361100237,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423281748, message_token=5546402928361100237, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614423312086,"chat_hostname":"SN-CHAT-03_","message_token":5546403057433136169,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"type":"file","media":"https://dl-media.viber.com/6/media/2/short/any/def/file/0x0/b9c1/cc7a5e0cd77cbe00f711d8a04f39e1e04d80279c3fa84cbff2d405b0db11b9c1?Expires=1614426912&Signature=JQmP6b4cVQ2vNphuFaiC5oSL9yQxrENrKYi2fgptlzrWpYpMdRt9ZU5AiF~wcNmViLlXZPjXzQzpHB1DscEZ~rrgm6063sEGSOTDxv5yyDyDS2Oy2KTtm5MI-Yv8lGo5Ap9PESudmuIq2mb1GMjJAuUz-y2ZDQbMglBJdDmLDWEPVRbrzgoSQfRdItr-mAYVWwKFweaAc14NRLOX9aKLYfrdRwZoDLAJQHYiZ8zcB4ThECKpGyB6Y7S0A76R1pzJfYJ-JWfes4~XD2DcdqC~iBiy4STsl8WqlmY2~FIbvp3AaRkx-A5EcNx~sHyIPgmMSKsLJeiEATKFq5aXxDhf0Q__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA","file_name":"Mark Lutz - Programming Python-O\'Reilly Media (2010).epub","size":21056015},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614423312086, message_token=5546403057433136169, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=FileMessage [tracking_data=None, keyboard=None, min_api_version=None, media=https://dl-media.viber.com/6/media/2/short/any/def/file/0x0/b9c1/cc7a5e0cd77cbe00f711d8a04f39e1e04d80279c3fa84cbff2d405b0db11b9c1?Expires=1614426912&Signature=JQmP6b4cVQ2vNphuFaiC5oSL9yQxrENrKYi2fgptlzrWpYpMdRt9ZU5AiF~wcNmViLlXZPjXzQzpHB1DscEZ~rrgm6063sEGSOTDxv5yyDyDS2Oy2KTtm5MI-Yv8lGo5Ap9PESudmuIq2mb1GMjJAuUz-y2ZDQbMglBJdDmLDWEPVRbrzgoSQfRdItr-mAYVWwKFweaAc14NRLOX9aKLYfrdRwZoDLAJQHYiZ8zcB4ThECKpGyB6Y7S0A76R1pzJfYJ-JWfes4~XD2DcdqC~iBiy4STsl8WqlmY2~FIbvp3AaRkx-A5EcNx~sHyIPgmMSKsLJeiEATKFq5aXxDhf0Q__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA, size=21056015, file_name=Mark Lutz - Programming Python-O'Reilly Media (2010).epub], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=We are processing, please wait a seconds], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'We are processing, please wait a seconds', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423313923,"chat_hostname":"SN-CHAT-03_","message_token":5546403063354773987,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423313923, message_token=5546403063354773987, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTPS connection (1): dl-media.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614423314265,"chat_hostname":"SN-CHAT-08_","message_token":5546403063354773987,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423314265, message_token=5546403063354773987, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://dl-media.viber.com:443 "GET /6/media/2/short/any/def/file/0x0/b9c1/cc7a5e0cd77cbe00f711d8a04f39e1e04d80279c3fa84cbff2d405b0db11b9c1?Expires=1614426912&Signature=JQmP6b4cVQ2vNphuFaiC5oSL9yQxrENrKYi2fgptlzrWpYpMdRt9ZU5AiF~wcNmViLlXZPjXzQzpHB1DscEZ~rrgm6063sEGSOTDxv5yyDyDS2Oy2KTtm5MI-Yv8lGo5Ap9PESudmuIq2mb1GMjJAuUz-y2ZDQbMglBJdDmLDWEPVRbrzgoSQfRdItr-mAYVWwKFweaAc14NRLOX9aKLYfrdRwZoDLAJQHYiZ8zcB4ThECKpGyB6Y7S0A76R1pzJfYJ-JWfes4~XD2DcdqC~iBiy4STsl8WqlmY2~FIbvp3AaRkx-A5EcNx~sHyIPgmMSKsLJeiEATKFq5aXxDhf0Q__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA HTTP/1.1" 200 21056015
+received request. post data: b'{"event":"seen","timestamp":1614423325859,"chat_hostname":"SN-CHAT-03_","message_token":5546403063354773987,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423325859, message_token=5546403063354773987, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloading], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloading', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloaded, we are processing the book to send it to you.], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloaded, we are processing the book to send it to you.', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614423335174,"chat_hostname":"SN-CHAT-03_","message_token":5546403152634731272,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423335174, message_token=5546403152634731272, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423335177,"chat_hostname":"SN-CHAT-03_","message_token":5546403152634731272,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423335177, message_token=5546403152634731272, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423335548,"chat_hostname":"SN-CHAT-08_","message_token":5546403152634731272,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423335548, message_token=5546403152634731272, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converting], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converting', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614423336308,"chat_hostname":"SN-CHAT-03_","message_token":5546403157282021709,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423336308, message_token=5546403157282021709, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423336310,"chat_hostname":"SN-CHAT-03_","message_token":5546403157282021709,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423336310, message_token=5546403157282021709, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423336940,"chat_hostname":"SN-CHAT-08_","message_token":5546403157282021709,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423336940, message_token=5546403157282021709, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423337370,"chat_hostname":"SN-CHAT-03_","message_token":5546403161832836922,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423337370, message_token=5546403161832836922, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423337375,"chat_hostname":"SN-CHAT-03_","message_token":5546403161832836922,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423337375, message_token=5546403161832836922, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423337412,"chat_hostname":"SN-CHAT-08_","message_token":5546403161832836922,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423337412, message_token=5546403161832836922, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Sending the mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Sending the mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423416415,"chat_hostname":"SN-CHAT-03_","message_token":5546403492998302046,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423416415, message_token=5546403492998302046, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Couldn't send mail, please try again], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Couldn't send mail, please try again", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423418560,"chat_hostname":"SN-CHAT-03_","message_token":5546403502150275740,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423418560, message_token=5546403502150275740, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423418304,"chat_hostname":"SN-CHAT-08_","message_token":5546403492998302046,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423418304, message_token=5546403492998302046, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423419840,"chat_hostname":"SN-CHAT-08_","message_token":5546403502150275740,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423419840, message_token=5546403502150275740, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423451090,"chat_hostname":"SN-CHAT-03_","message_token":5546403502150275740,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423451090, message_token=5546403502150275740, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Shutting down
+Waiting for application shutdown.
+Application shutdown complete.
+Finished server process [8340]
+Started server process [14076]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"message","timestamp":1614423555832,"chat_hostname":"SN-CHAT-03_","message_token":5546404079790542252,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"asdasdasd","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614423555832, message_token=5546404079790542252, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=asdasdasd], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are processing], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Please wait a seconds, we are processing', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423557708,"chat_hostname":"SN-CHAT-03_","message_token":5546404085947061566,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423557708, message_token=5546404085947061566, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423557704,"chat_hostname":"SN-CHAT-03_","message_token":5546404085947061566,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423557704, message_token=5546404085947061566, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423557722,"chat_hostname":"SN-CHAT-08_","message_token":5546404085947061566,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423557722, message_token=5546404085947061566, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a seconds, we are searching the book with title 'asdasdasd'], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Please wait a seconds, we are searching the book with title 'asdasdasd'", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Starting new HTTP connection (1): gen.lib.rus.ec:80
+received request. post data: b'{"event":"seen","timestamp":1614423560202,"chat_hostname":"SN-CHAT-03_","message_token":5546404096470566679,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423560202, message_token=5546404096470566679, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423560208,"chat_hostname":"SN-CHAT-03_","message_token":5546404096470566679,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423560208, message_token=5546404096470566679, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423560263,"chat_hostname":"SN-CHAT-08_","message_token":5546404096470566679,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423560263, message_token=5546404096470566679, user_id=vCrVBOgvfyl0odAzKtwayw==]
+http://gen.lib.rus.ec:80 "GET /search.php?req=asdasdasd&column=title HTTP/1.1" 301 178
+Starting new HTTP connection (1): libgen.rs:80
+http://libgen.rs:80 "GET /search.php?req=asdasdasd&column=title HTTP/1.1" 200 None
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=No result for search asdasdasd. Please try again, use '/help' to help], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "No result for search asdasdasd. Please try again, use '/help' to help", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423562938,"chat_hostname":"SN-CHAT-03_","message_token":5546404107908433812,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423562938, message_token=5546404107908433812, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423562939,"chat_hostname":"SN-CHAT-03_","message_token":5546404107908433812,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423562939, message_token=5546404107908433812, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423562973,"chat_hostname":"SN-CHAT-08_","message_token":5546404107908433812,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423562973, message_token=5546404107908433812, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"message","timestamp":1614423589946,"chat_hostname":"SN-CHAT-03_","message_token":5546404222849863049,"sender":{"id":"vCrVBOgvfyl0odAzKtwayw==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"type":"file","media":"https://dl-media.viber.com/6/media/2/short/any/def/file/0x0/7089/139e7718ae3ca858fb72aedda2b4f2721e63588bbeadb0c6c3b4c1b55a7d7089?Expires=1614427190&Signature=PoPd-nJu-3fiivEMcyYBqQvtW3Nag5hSSCJ7Slr2N~L~bt23yxzY5E6NASRl-ZQaGgocBQeWfQH5L5YDDonHACqR6eiyg3DZyvLrNoWQCaCip6DM93ElbkIVLCQntu-yIrslwMAqlWKXEiOpq5gEfSSVaP3xQmIaftQui-jUYT1B-yAasB~5q9huhCWdAUG9NRjqgtzoRShhPDxzRRZGOykDrkuUWu968lM9G05n53Ia1Yqlo378SR84JFdsvRiV8c2oNzSEg3z1xK~UnhywZH~~DcQ0a6R4nI4Qz47yyMkc9tuNMQTWTdcdH~NzazoLAXDc818a7PNz4PcHF7~96w__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA","file_name":"Mark Lutz - Programming Python-O\'Reilly Media (2010).epub","size":21056015},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614423589946, message_token=5546404222849863049, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=fOPwphPR58bUXvdM-SBeUdR5qJy1ahbafageNx-DZfw62SBvi8XeUpKiRs8DeNL-7IbTl7PfclgT6qoID1WpVd489fJ1_Ufr6PyC7fK4W06fFuv6BgjRV7n_60z8PAwaTwOrrg&fltp=jpg&imsz=0000, id=vCrVBOgvfyl0odAzKtwayw==, country=VN, language=vi-VN, api_version=8, message=FileMessage [tracking_data=None, keyboard=None, min_api_version=None, media=https://dl-media.viber.com/6/media/2/short/any/def/file/0x0/7089/139e7718ae3ca858fb72aedda2b4f2721e63588bbeadb0c6c3b4c1b55a7d7089?Expires=1614427190&Signature=PoPd-nJu-3fiivEMcyYBqQvtW3Nag5hSSCJ7Slr2N~L~bt23yxzY5E6NASRl-ZQaGgocBQeWfQH5L5YDDonHACqR6eiyg3DZyvLrNoWQCaCip6DM93ElbkIVLCQntu-yIrslwMAqlWKXEiOpq5gEfSSVaP3xQmIaftQui-jUYT1B-yAasB~5q9huhCWdAUG9NRjqgtzoRShhPDxzRRZGOykDrkuUWu968lM9G05n53Ia1Yqlo378SR84JFdsvRiV8c2oNzSEg3z1xK~UnhywZH~~DcQ0a6R4nI4Qz47yyMkc9tuNMQTWTdcdH~NzazoLAXDc818a7PNz4PcHF7~96w__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA, size=21056015, file_name=Mark Lutz - Programming Python-O'Reilly Media (2010).epub], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=We are processing, please wait a seconds], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'We are processing, please wait a seconds', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423591853,"chat_hostname":"SN-CHAT-03_","message_token":5546404228901520001,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423591853, message_token=5546404228901520001, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Starting new HTTPS connection (1): dl-media.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614423591945,"chat_hostname":"SN-CHAT-08_","message_token":5546404228901520001,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423591945, message_token=5546404228901520001, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://dl-media.viber.com:443 "GET /6/media/2/short/any/def/file/0x0/7089/139e7718ae3ca858fb72aedda2b4f2721e63588bbeadb0c6c3b4c1b55a7d7089?Expires=1614427190&Signature=PoPd-nJu-3fiivEMcyYBqQvtW3Nag5hSSCJ7Slr2N~L~bt23yxzY5E6NASRl-ZQaGgocBQeWfQH5L5YDDonHACqR6eiyg3DZyvLrNoWQCaCip6DM93ElbkIVLCQntu-yIrslwMAqlWKXEiOpq5gEfSSVaP3xQmIaftQui-jUYT1B-yAasB~5q9huhCWdAUG9NRjqgtzoRShhPDxzRRZGOykDrkuUWu968lM9G05n53Ia1Yqlo378SR84JFdsvRiV8c2oNzSEg3z1xK~UnhywZH~~DcQ0a6R4nI4Qz47yyMkc9tuNMQTWTdcdH~NzazoLAXDc818a7PNz4PcHF7~96w__&Key-Pair-Id=APKAJ62UNSBCMEIPV4HA HTTP/1.1" 200 21056015
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloading], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloading', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Downloaded, we are processing the book to send it to you.], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Downloaded, we are processing the book to send it to you.', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614423607256,"chat_hostname":"SN-CHAT-03_","message_token":5546404293749662694,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423607256, message_token=5546404293749662694, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423607300,"chat_hostname":"SN-CHAT-08_","message_token":5546404293749662694,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423607300, message_token=5546404293749662694, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Converting], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Converting', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"delivered","timestamp":1614423608282,"chat_hostname":"SN-CHAT-03_","message_token":5546404298015266747,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423608282, message_token=5546404298015266747, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423608305,"chat_hostname":"SN-CHAT-08_","message_token":5546404298015266747,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423608305, message_token=5546404298015266747, user_id=vCrVBOgvfyl0odAzKtwayw==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614423609291,"chat_hostname":"SN-CHAT-03_","message_token":5546404302322814956,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423609291, message_token=5546404302322814956, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423609333,"chat_hostname":"SN-CHAT-08_","message_token":5546404302322814956,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423609333, message_token=5546404302322814956, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423609301,"chat_hostname":"SN-CHAT-03_","message_token":5546404302322814956,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423609301, message_token=5546404302322814956, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Sending the mail], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': 'Sending the mail', 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423687788,"chat_hostname":"SN-CHAT-03_","message_token":5546404631126887690,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423687788, message_token=5546404631126887690, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423687888,"chat_hostname":"SN-CHAT-08_","message_token":5546404631126887690,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423687888, message_token=5546404631126887690, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423688267,"chat_hostname":"SN-CHAT-03_","message_token":5546404631126887690,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423688267, message_token=5546404631126887690, user_id=vCrVBOgvfyl0odAzKtwayw==]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Book was sent through kindle mail, please check after 30 - 60 minutes. If can't not received book, please check again your kindle mail and steps that we recommended", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614423851786,"chat_hostname":"SN-CHAT-03_","message_token":5546405319441537327,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423851786, message_token=5546405319441537327, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"seen","timestamp":1614423851787,"chat_hostname":"SN-CHAT-03_","message_token":5546405319441537327,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614423851787, message_token=5546405319441537327, user_id=vCrVBOgvfyl0odAzKtwayw==]
+received request. post data: b'{"event":"delivered","timestamp":1614423851884,"chat_hostname":"SN-CHAT-08_","message_token":5546405319441537327,"user_id":"vCrVBOgvfyl0odAzKtwayw=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614423851884, message_token=5546405319441537327, user_id=vCrVBOgvfyl0odAzKtwayw==]
+Shutting down
+Finished server process [14076]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Couldn't send mail, please try again], to: vCrVBOgvfyl0odAzKtwayw==
+going to send message: {'type': 'text', 'text': "Couldn't send mail, please try again", 'auth_token': '4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca', 'receiver': 'vCrVBOgvfyl0odAzKtwayw==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<LifespanOn.main() running at c:\programdata\miniconda3\lib\site-packages\uvicorn\lifespan\on.py:55> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001F051841D90>()]>>
+ASGI 'lifespan' protocol appears unsupported.
