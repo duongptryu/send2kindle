@@ -99,4 +99,3 @@ def pre_download(message,viber_request, background_tasks, viber):
         decrease_process(user)
         return viber.send_messages(viber_request.sender.id, TextMessage(text="Some errors, please check input. Using '/help' to help" ))
     decrease_process(user)
-#
