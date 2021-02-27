@@ -6,9 +6,6 @@ BOT_NAME = "Send2Kindle"
 AVATAR = "https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg"
 TOKEN = os.environ.get('token')
 
-
-#
-
 MESSAGE_GUIDE = '''
     Welcome 🦠🦠🦠! ✨
 This bot can send files to your Kindle.
