@@ -4,7 +4,7 @@ def guide(viber, viber_request):
     message = '''
     Welcome 🦠🦠🦠! ✨
 This bot can send files to your Kindle.
-The maximum file size is 50 MB.
+The maximum file size is 25 MB.
 
 1️⃣ Setup your Kindle account with this command:
 /email YourEmail@kindle.com
@@ -19,7 +19,7 @@ This bot support extension .pdb, .mobi, .asw3 and .epub.
 
 Syntax
 1. Help: /help
-2. Registration/ update mail: /mail your_kindl_email@kindle.com
+2. Registration/ update mail: /email your_kindl_email@kindle.com
 4. Type and send message to search book
 5. Download book: Click GET button
 
