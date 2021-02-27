@@ -15,7 +15,7 @@ The maximum file size is 25 MB.
 1️⃣ Setup your Kindle account with this command:
 /email YourEmail@kindle.com
 
-2️⃣ Go to your <a href="https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_surl_1#/home/settings/payment">Amazon account</a>→ Preferences tab → Personal Document Settings and add send2kindle.ncsc@gmail.com to approved e-mail list (no mistake, you need to approve the whole domain)
+2️⃣ Go to your viber://pa?chatURI=https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_surl_1#/home/settings/payment&context=Amazon account&text=Amazon account→ Preferences tab → Personal Document Settings and add send2kindle.ncsc@gmail.com to approved e-mail list (no mistake, you need to approve the whole domain)
 
 👆 This is necessary step to allow your Kindle account to receive files!
 
