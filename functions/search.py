@@ -54,7 +54,7 @@ def search(message, viber_request, background_tasks, viber):
         decrease_process(user)
         return viber.send_messages(
             viber_request.sender.id,
-            TextMessage(text="Couldn't search now, please try later"))
+            TextMessage(text="Invalid input, please try again"))
 
     if len(result) == 0:
         decrease_process(user)
