@@ -16,10 +16,6 @@ def process(viber, viber_request):
     if check_status(user) == False:
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Please comeback later, We are working on your previous request"))
     increase_process(user)
-    if user.search_temporary == [1]:
-        decrease_process(user)
-        return viber.send_messages(viber_request.sender.id, TextMessage(text="Please search before download, user '/help' to help" ))
-
     ext = viber_request.message.file_name.split(".")[-1]
     ext_list = ['epub', 'fb2', 'cbz', 'cbr', 'mobi', 'pdf', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
     convert_list = ['epub', 'fb2', 'cbz', 'cbr', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
