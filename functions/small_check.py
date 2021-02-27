@@ -12,7 +12,7 @@ def add_search(user, result):
     user.save()
 
 def delete(name_book):
-    os.remove(os.getcwd() + "/download/" + name_book)
+    os.remove(name_book)
 
 def increase_process(user):
     user.status = 1
