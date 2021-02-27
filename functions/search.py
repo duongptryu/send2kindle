@@ -38,18 +38,18 @@ def search(message, viber_request, background_tasks, viber):
                                    TextMessage(text="Error with check user"))
     # background_tasks.add_task(clear_search, user)
 
-    filters = {
-        # "Author": "Brian Hatch",
-        # "Extension": Extension,
-        # "Publisher": Publisher,
-        # "Year": Year,
-        # "Language": Language,
-        # "Pages": 2
-    }
+    # filters = {
+    #     # "Author": "Brian Hatch",
+    #     # "Extension": Extension,
+    #     # "Publisher": Publisher,
+    #     # "Year": Year,
+    #     # "Language": Language,
+    #     # "Pages": 2
+    # }
     title = message.strip()
     try:
         # import pdb; pdb.set_trace()
-        result = s.search_title_filtered(title, filters)
+        result = s.search_title(title)
     except:
         decrease_process(user)
         return viber.send_messages(
