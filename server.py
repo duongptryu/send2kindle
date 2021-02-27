@@ -60,7 +60,6 @@ async def incoming(request: Request, response: Response, sig: str,
                 background_tasks.add_task(process,viber, viber_request)
         except:
             message = viber_request.message.text
-            # check message
             syntax = message.split(" ")
             
             if syntax[0] in config.COMMAND_LIST:
