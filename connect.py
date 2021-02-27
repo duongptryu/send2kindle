@@ -7,6 +7,6 @@ bot_configuration = BotConfiguration(
 	auth_token='4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca'
 )
 viber = Api(bot_configuration)
-viber.set_webhook("https://5e77548b8461.ngrok.io")
+viber.set_webhook("https://send2kindle-ncsc.herokuapp.com/")
 
 
