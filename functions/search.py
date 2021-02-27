@@ -17,7 +17,7 @@ def search(message, viber_request, background_tasks, viber):
                 viber_request.sender.id,
                 TextMessage(
                     text=
-                    "Account didn't registraded with kindle mail. Please registration with syntax: \n /registration yourkindlemail@kindle.com"
+                    "Account didn't registration with kindle mail. Please registration with syntax: \n /email yourkindlemail@kindle.com"
                 ))
         if check_status(user) == False:
             return viber.send_messages(

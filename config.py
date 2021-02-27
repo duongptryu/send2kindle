@@ -1,7 +1,13 @@
-from viberbot.api.messages.text_message import TextMessage
+COMMAND_LIST = ["/help", "/email", "/GET"]
+MONGO_URL = "mongodb+srv://duongpt:A201085a@send2kindle.p91gu.mongodb.net/chatbot?retryWrites=true&w=majority"
+BOT_NAME = "Send2Kindle"
+AVATAR = "https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg"
+TOKEN = "4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca"
 
-def guide(viber, viber_request):
-    message = '''
+
+
+
+MESSAGE_GUIDE = '''
     Welcome 🦠🦠🦠! ✨
 This bot can send files to your Kindle.
 The maximum file size is 50 MB.
@@ -25,4 +31,3 @@ Syntax
 
     
     '''
-    return viber.send_messages(viber_request.sender.id, TextMessage(text=message))

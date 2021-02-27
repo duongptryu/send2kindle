@@ -4,15 +4,15 @@ from viberbot.api.messages.text_message import TextMessage
 import re
 
 def registration_update(viber_request, viber):
+    kindle_email = re.search("[a-zA-Z0-9-_.]+@kindle.com", viber_request.message.text)
+    if kindle_email == None:
+        return viber.send_messages(viber_request.sender.id, TextMessage(text="Email must be kindle mail, please check again"))
+    kindle_email = kindle_email.group()
     try:
+        import pdb; pdb.set_trace()
         user = User.objects.get({'_id': viber_request.sender.id})
         if check_status(user) == False:
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Please comeback later, We are working on your previous request"))
-
-        kindle_email = re.search("[a-zA-Z0-9-_.]+@kindle.com", viber_request.message.text)
-        if kindle_email == None:
-            return viber.send_messages(viber_request.sender.id, TextMessage(text="Email must be kindle mail, please check again"))
-        kindle_email = kindle_email.group()
         try:
             user.kindle_mail = kindle_email
             user.save()

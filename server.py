@@ -19,41 +19,24 @@ from viberbot.api.viber_requests import ViberSubscribedRequest
 from viberbot.api.viber_requests import ViberUnsubscribedRequest
 from viberbot.api.viber_requests import ViberDeliveredRequest
 from viberbot.api.viber_requests import ViberSeenRequest
+import config
 
 app = FastAPI()
 
 viber = Api(
     BotConfiguration(
-        name='PythonSampleBot',
-        avatar='http://site.com/avatar.jpg',
-        auth_token='4cf24aa8c427dec0-fdf401a1da0b2abb-c74184dd9ac8b1c'))
+        name=config.BOT_NAME,
+        avatar=config.AVATAR,
+        auth_token=config.TOKEN))
 
-message_guide = '''
-    Welcome 🦠🦠🦠! ✨
-This bot can send files to your Kindle.
-The maximum file size is 50 MB.
 
-1️⃣ Setup your Kindle account with this command:
-/email YourEmail@kindle.com
-
-2️⃣ Go to your Amazon account → Preferences tab → Personal Document Settings and add duongptryu@gmail.com to approved e-mail list (no mistake, you need to approve the whole domain)
-
-👆 This is necessary step to allow your Kindle account to receive files!
-
-3️⃣ All set up! 🎉
-
-This bot support extension .pdb, .mobi, .asw3 and .epub. 
-
-Syntax
-1. Help: /help
-2. Registration/ update mail: /mail your_kindl_email@kindle.com
-4. Type and send message to search book
-5. Download book: Click GET button
-
-    
-    '''
 
 logger = logging.getLogger()
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler('system.log', 'a', 'utf-8')
+logger.addHandler(handler)
+
 
 err_message = "Incorrect syntax, using '/help' to help"
 
@@ -79,18 +62,18 @@ async def incoming(request: Request, response: Response, sig: str,
             message = viber_request.message.text
             # check message
             syntax = message.split(" ")
-            command_list = ["/help", "/email", "/GET"]
-            if syntax[0].lower() in command_list:
-                if syntax[0].lower() == "/help":
+            
+            if syntax[0] in config.COMMAND_LIST:
+                if syntax[0] == "/help":
                     guide(viber, viber_request)
                 elif len(syntax) < 2:
                     return viber.send_messages(
                         viber_request.sender.id,
                         TextMessage(text="Need to have valid value"))
-                elif syntax[0].lower() == '/email':
+                elif syntax[0] == '/email':
                     background_tasks.add_task(registration_update, viber_request,
                                             viber)
-                elif syntax[0].lower() == '/GET':
+                elif syntax[0] == '/GET':
                     background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
             else:
                 viber.send_messages(
@@ -100,9 +83,7 @@ async def incoming(request: Request, response: Response, sig: str,
 
     elif isinstance(viber_request, ViberConversationStartedRequest):
         viber.send_messages(viber_request.user.id,
-                            [TextMessage(text=message_guide)])
-    # elif isinstance(viber_request, ViberUnsubscribedRequest):
-    #     background_tasks.add_task(unsup, viber_request)
+                            [TextMessage(text=config.MESSAGE_GUIDE)])
     elif isinstance(viber_request, ViberSubscribedRequest):
         viber.send_messages(viber_request.get_user.id,
                             [TextMessage(text="thanks for subscribing!")])

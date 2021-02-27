@@ -4,9 +4,9 @@ from viberbot.api.bot_configuration import BotConfiguration
 bot_configuration = BotConfiguration(
 	name='PythonSampleBot',
 	avatar='http://viber.com/avatar.jpg',
-	auth_token='4cf24aa8c427dec0-fdf401a1da0b2abb-c74184dd9ac8b1c'
+	auth_token='4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca'
 )
 viber = Api(bot_configuration)
-viber.set_webhook("https://d95ca7afc867.ngrok.io")
+viber.set_webhook("https://5e77548b8461.ngrok.io")
 
 

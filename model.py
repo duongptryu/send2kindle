@@ -1,9 +1,11 @@
 from pymodm import connect, fields, MongoModel
 from pymongo.write_concern import WriteConcern
 from pymodm.connection import connect
+import config
+from pymodm.connection import connect
 
 
-connect("mongodb://localhost:27017/chatbot", alias="my-app")
+connect(config.MONGO_URL, alias="user")
 
 
 class User(MongoModel):
@@ -15,4 +17,4 @@ class User(MongoModel):
 
     class Meta:
         write_concern = WriteConcern(j=True)
-        connection_alias = 'my-app'
+        connection_alias = 'user'

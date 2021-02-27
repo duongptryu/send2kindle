@@ -7,7 +7,7 @@ import time
 import re
 from fastapi import HTTPException
 from functions.send_mail import send_mail
-from functions.convert import convert_epub_to_mobi
+from functions.convert import convert_to_mobi
 
 def download(book_title, book_ext, viber_request, url_download, background_tasks, viber, user):
     url = url_download
@@ -64,10 +64,10 @@ def pre_download(message,viber_request, background_tasks, viber):
         if book['Extension'] not in ext_list:
             decrease_process(user)
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Sorry, now we haven't yet support this extension" ))
-        if int(book['Size'].split(" ")[0]) > 50 and book['Size'].split(" ")[1] == 'Mb':
+        if int(book['Size'].split(" ")[0]) > 25 and book['Size'].split(" ")[1] == 'Mb':
             decrease_process(user)
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Can't convert. Size must be smaller than 50 Mb" ))
-        elif int(book['Size'].split(" ")[0]) > 400000 and book['Size'].split(" ")[1] == 'Kb':
+        elif int(book['Size'].split(" ")[0]) > 200000 and book['Size'].split(" ")[1] == 'Kb':
             decrease_process(user)
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Can't convert. Size must be smaller than 50 Mb" ))
         
@@ -83,7 +83,7 @@ def pre_download(message,viber_request, background_tasks, viber):
             convert_list = ['epub', 'fb2', 'cbz', 'cbr', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
             if book['Extension'] in convert_list:
                 try:
-                    new_name = convert_epub_to_mobi(name_book, viber, viber_request)
+                    new_name = convert_to_mobi(name_book, viber, viber_request)
                     name_book = new_name
                 except:
                     decrease_process(user)
