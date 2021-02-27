@@ -48,7 +48,6 @@ def search(message, viber_request, background_tasks, viber):
     # }
     title = message.strip()
     try:
-        # import pdb; pdb.set_trace()
         result = s.search_title(title)
     except:
         decrease_process(user)
