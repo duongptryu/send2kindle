@@ -24,7 +24,7 @@ def process(viber, viber_request):
     ext_list = ['epub', 'fb2', 'cbz', 'cbr', 'mobi', 'pdf', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
     convert_list = ['epub', 'fb2', 'cbz', 'cbr', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
     if ext in ext_list:
-        if int(viber_request.message.size) < int(50000000):
+        if int(viber_request.message.size) < int(200000):
             name_book = download_file(viber_request.message.media, viber, viber_request, user)
             if name_book.split(".")[-1] in convert_list:
                 try:
@@ -43,7 +43,7 @@ def process(viber, viber_request):
             decrease_process(user)
         else:
             decrease_process(user)
-            return viber.send_messages(viber_request.sender.id, TextMessage(text="File too large" ))
+            return viber.send_messages(viber_request.sender.id, TextMessage(text="File too large, size must smaller than 25 Mb" ))
     else:
         decrease_process(user)
         return viber.send_messages(viber_request.sender.id, TextMessage(text="We are not support this extension" ))
@@ -54,10 +54,9 @@ def download_file(url, viber, viber_request, user):
     name = viber_request.message.file_name.split(".")
     if res.status_code == 200:
         viber.send_messages(viber_request.sender.id, TextMessage(text="Downloading" ))
-        path = os.getcwd() + "\\download\\"
         name_book = name[0] + "_" + str(time.time()) +"." + name[-1]
 
-        with open(path + name_book, 'wb') as f:
+        with open(name_book, 'wb') as f:
             f.write(res.content)
         viber.send_messages(viber_request.sender.id, TextMessage(text="Downloaded, we are processing the book to send it to you."))
         return name_book

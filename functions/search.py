@@ -48,9 +48,7 @@ def search(message, viber_request, background_tasks, viber):
     # }
     title = message.strip()
     try:
-        print(title)
         result = s.search_title(title)
-        print(result)
     except:
         decrease_process(user)
         return viber.send_messages(
