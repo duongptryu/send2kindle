@@ -63,10 +63,10 @@ def pre_download(message,viber_request, background_tasks, viber):
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Sorry, now we haven't yet support this extension" ))
         if int(book['Size'].split(" ")[0]) > 25 and book['Size'].split(" ")[1] == 'Mb':
             decrease_process(user)
-            return viber.send_messages(viber_request.sender.id, TextMessage(text="Can't convert. Size must be smaller than 50 Mb" ))
+            return viber.send_messages(viber_request.sender.id, TextMessage(text="Can't convert. Size must be smaller than 25 Mb" ))
         elif int(book['Size'].split(" ")[0]) > 200000 and book['Size'].split(" ")[1] == 'Kb':
             decrease_process(user)
-            return viber.send_messages(viber_request.sender.id, TextMessage(text="Can't convert. Size must be smaller than 50 Mb" ))
+            return viber.send_messages(viber_request.sender.id, TextMessage(text="Can't convert. Size must be smaller than 25 Mb" ))
         
 
         background_tasks.add_task(clear_search, user)
