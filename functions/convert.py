@@ -12,7 +12,7 @@ def convert_to_mobi(file_name, viber, viber_request):
     try:
         viber.send_messages(viber_request.sender.id, TextMessage(text="Converting" ))
         # os.system('ebook-convert ' + '"' + os.getcwd() + '\\download\\' + name_book +'.epub" ' + '"' + os.getcwd() + '\\download\\' + name_book + '.mobi"')
-        subprocess.call(["ebook-convert",os.getcwd() + '\\download\\' + name_book + "." + file_name[-1], os.getcwd() + '\\download\\' + name_book +'.mobi']) 
+        subprocess.call(["ebook-convert",os.getcwd() + '/download/' + name_book + "." + file_name[-1], os.getcwd() + '/download/' + name_book +'.mobi']) 
         viber.send_messages(viber_request.sender.id, TextMessage(text="Converted" ))
         delete(name_book + ".epub")
         return name_book + ".mobi"
