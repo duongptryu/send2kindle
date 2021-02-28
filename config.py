@@ -40,5 +40,9 @@ def MESSAGE_GUIDE(name):
     4. Type and send message to search book
     5. Download book: Click GET button
 
+    👉HOW TO USE 👀
+    Way 1. Search book with title and click GET button
+    Way 2. Drag and drop files to viber chat box.
+
     Have fun <3  🦠🦠🦠
         '''
