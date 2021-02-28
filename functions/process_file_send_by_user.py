@@ -6,6 +6,7 @@ from functions.convert import convert_to_mobi
 from functions.send_mail import send_mail
 from fastapi import HTTPException
 import time
+import config
 
 def process(viber, viber_request):
     viber.send_messages(viber_request.sender.id, TextMessage(text="We are processing, please wait a seconds"))
@@ -18,12 +19,11 @@ def process(viber, viber_request):
     increase_process(user)
 
     ext = viber_request.message.file_name.split(".")[-1]
-    ext_list = ['epub', 'fb2', 'cbz', 'cbr', 'mobi', 'pdf', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
-    convert_list = ['epub', 'fb2', 'cbz', 'cbr', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
-    if ext in ext_list:
+
+    if ext in config.EXT_LIST:
         if int(viber_request.message.size) < int(50000000):
             name_book = download_file(viber_request.message.media, viber, viber_request, user)
-            if name_book.split(".")[-1] in convert_list:
+            if name_book.split(".")[-1] in config.CONVERT_LIST:
                 try:
                     new_name = convert_to_mobi(name_book, viber, viber_request)
                     name_book = new_name

@@ -59,33 +59,40 @@ async def incoming(request: Request, response: Response, sig: str,
             if viber_request.message.media:
                 background_tasks.add_task(process,viber, viber_request)
         except:
-            message = viber_request.message.text
-            syntax = message.split(" ")
-            
-            if syntax[0] in config.COMMAND_LIST:
-                if syntax[0] == "/help":
-                    guide(viber, viber_request)
-                elif len(syntax) < 2:
-                    return viber.send_messages(
-                        viber_request.sender.id,
-                        TextMessage(text="Need to have valid value"))
-                elif syntax[0] == '/email':
-                    background_tasks.add_task(registration_update, viber_request,
-                                            viber)
-                elif syntax[0] == '/GET':
-                    background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
+            if viber_request.message.text:
+                message = viber_request.message.text
+                syntax = message.split(" ")
+                
+                if syntax[0] in config.COMMAND_LIST:
+                    if syntax[0] == "/help":
+                        guide(viber, viber_request)
+                    elif len(syntax) < 2:
+                        viber.send_messages(
+                            viber_request.sender.id,
+                            TextMessage(text="Need to have valid value"))
+                    elif syntax[0] == '/email':
+                        background_tasks.add_task(registration_update, viber_request,
+                                                viber)
+                    elif syntax[0] == '/GET':
+                        background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
+                else:
+                    viber.send_messages(
+                            viber_request.sender.id,
+                            TextMessage(text="Please wait a seconds, we are processing"))
+                    background_tasks.add_task(search, message, viber_request, background_tasks, viber)
             else:
                 viber.send_messages(
-                        viber_request.sender.id,
-                        TextMessage(text="Please wait a seconds, we are processing"))
-                background_tasks.add_task(search, message, viber_request, background_tasks, viber)
+                            viber_request.sender.id,
+                            TextMessage(text="Invalid input, please try again, use '/help' to help"))
 
     elif isinstance(viber_request, ViberConversationStartedRequest):
         viber.send_messages(viber_request.user.id,
                             [TextMessage(text=config.MESSAGE_GUIDE)])
     elif isinstance(viber_request, ViberSubscribedRequest):
         viber.send_messages(viber_request.get_user.id,
-                            [TextMessage(text="thanks for subscribing!")])
+                            [TextMessage(text="Thanks for subscribing!")])
+        viber.send_messages(viber_request.user.id,
+                            [TextMessage(text=config.MESSAGE_GUIDE)])
     elif isinstance(viber_request, ViberFailedRequest):
         logger.warn("client failed receiving message. failure: {0}".format(
             viber_request))

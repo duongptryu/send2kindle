@@ -1,15 +1,17 @@
 from model import User
 from functions.small_check import check_register, increase_process, decrease_process, check_status, clear_search, delete
 from viberbot.api.messages.text_message import TextMessage
+from viberbot.api.messages.file_message import FileMessage
 import requests
 import os
 import time
 import re
+import config
 from fastapi import HTTPException
 from functions.send_mail import send_mail
 from functions.convert import convert_to_mobi
 
-def download(book_title, book_ext, viber_request, url_download, background_tasks, viber, user):
+def download(book_title, book_ext, book_size, viber_request, url_download, background_tasks, viber, user):
     url = url_download
     res = requests.get(url, allow_redirects=True)
     # import pdb; pdb.set_trace()
@@ -23,6 +25,13 @@ def download(book_title, book_ext, viber_request, url_download, background_tasks
         with open(name_book, 'wb') as f:
             f.write(res.content)
         viber.send_messages(viber_request.sender.id, TextMessage(text="Downloaded, we are processing the book to send it to you."))
+        size = book_size.split(" ")
+        try:
+            name = name_book.split("_")[0] + "." + name_book.split(".")[-1]
+            viber.send_messages(viber_request.sender.id, FileMessage(media="file:///" + os.getcwd() + name_book, size=os.path.getsize(name_book), file_name=name))
+        except:
+            viber.send_messages(viber_request.sender.id, TextMessage(text="Couldn't send file through viber"))
+
         return name_book
     else:
         viber.send_messages(viber_request.sender.id, TextMessage(text="Couldn't download. Please try again" ))
@@ -57,8 +66,7 @@ def pre_download(message,viber_request, background_tasks, viber):
 
     try:
         book = books[int(number) - 1]
-        ext_list = ['epub', 'fb2', 'cbz', 'cbr', 'mobi', 'pdf', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
-        if book['Extension'] not in ext_list:
+        if book['Extension'] not in config.EXT_LIST:
             decrease_process(user)
             return viber.send_messages(viber_request.sender.id, TextMessage(text="Sorry, now we haven't yet support this extension" ))
         if int(book['Size'].split(" ")[0]) > 25 and book['Size'].split(" ")[1] == 'Mb':
@@ -76,9 +84,9 @@ def pre_download(message,viber_request, background_tasks, viber):
         urls = re.findall(r'href=[\'"]?([^\'" >]+)', res)
         url_download = urls[1]
         try:
-            name_book = download(book['Title'],book['Extension'], viber_request, url_download, background_tasks, viber, user)
-            convert_list = ['epub', 'fb2', 'cbz', 'cbr', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
-            if book['Extension'] in convert_list:
+            name_book = download(book['Title'],book['Extension'], book['Size'], viber_request, url_download, background_tasks, viber, user)
+            
+            if book['Extension'] in config.CONVERT_LIST:
                 try:
                     new_name = convert_to_mobi(name_book, viber, viber_request)
                     name_book = new_name

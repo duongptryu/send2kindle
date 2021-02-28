@@ -1,10 +1,11 @@
 from viberbot import Api
 from viberbot.api.bot_configuration import BotConfiguration
+import config
 
 bot_configuration = BotConfiguration(
-	name='PythonSampleBot',
-	avatar='http://viber.com/avatar.jpg',
-	auth_token='4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca'
+	name=config.BOT_NAME,
+	avatar=config.AVATAR,
+	auth_token=config.TOKEN
 )
 viber = Api(bot_configuration)
-viber.set_webhook("https://send2kindle-ncsc.herokuapp.com/")
+viber.set_webhook("https://22837baafeb9.ngrok.io")

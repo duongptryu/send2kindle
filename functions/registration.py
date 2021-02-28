@@ -4,10 +4,13 @@ from viberbot.api.messages.text_message import TextMessage
 import re
 
 def registration_update(viber_request, viber):
-    kindle_email = re.search("[a-zA-Z0-9-_.]+@kindle.com", viber_request.message.text)
-    if kindle_email == None:
-        return viber.send_messages(viber_request.sender.id, TextMessage(text="Email must be kindle mail, please check again"))
-    kindle_email = kindle_email.group()
+    try:
+        kindle_email = re.findall("[a-zA-Z0-9-_.]+@kindle.com", viber_request.message.text)
+        if kindle_email == None or len(kindle_email) == 0:
+            return viber.send_messages(viber_request.sender.id, TextMessage(text="Email must be kindle mail, please check again"))
+        kindle_email = kindle_email[0]
+    except:
+        return viber.send_messages(viber_request.sender.id, TextMessage(text="Couldn't register now, please try later"))
     try:
         user = User.objects.get({'_id': viber_request.sender.id})
         if check_status(user) == False:
@@ -22,6 +25,6 @@ def registration_update(viber_request, viber):
         try:
             user = User(viber_id=viber_request.sender.id,kindle_mail=kindle_email, search_temporary=[1], history=[1], status=0)
             user.save()
-            viber.send_messages(viber_request.sender.id, TextMessage(text="Registration success with kindle mail " + kindle_email))
+            viber.send_messages(viber_request.sender.id, TextMessage(text="Register success with kindle mail " + kindle_email))
         except:
             viber.send_messages(viber_request.sender.id, TextMessage(text="Some errors, can't not registration. We will fix it as soon as possible"))

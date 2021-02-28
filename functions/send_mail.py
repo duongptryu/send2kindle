@@ -1,4 +1,5 @@
 import smtplib 
+import config
 from email.mime.multipart import MIMEMultipart 
 from email.mime.text import MIMEText 
 from email.mime.base import MIMEBase 
@@ -6,8 +7,8 @@ from email import encoders
 import os
 from viberbot.api.messages.text_message import TextMessage
 
-fromaddr = os.environ.get('email')
-password = os.environ.get('password')
+fromaddr = config.EMAIL
+password = config.PASSWORD
 
    
 msg = MIMEMultipart() 
@@ -21,8 +22,9 @@ def send_mail(name_book, user, viber, viber_request):
     attachment = open(filename, "rb") 
     p = MIMEBase('application', 'octet-stream') 
     p.set_payload((attachment).read())
-    encoders.encode_base64(p) 
-    p.add_header('Content-Disposition', "attachment; filename= %s" % filename) 
+    encoders.encode_base64(p)
+    name = name_book.split("_")[0] + "." + name_book.split(".")[-1]
+    p.add_header('Content-Disposition', "attachment; filename= %s" % name) 
     msg.attach(p) 
     s = smtplib.SMTP('smtp.gmail.com', 587) 
     s.starttls() 
