@@ -16,24 +16,25 @@ CONVERT_LIST = ['epub', 'fb2', 'cbz', 'cbr', 'docx', 'html', 'txt', 'odt', 'chm'
 
 def MESSAGE_GUIDE(name):
     return  f'''
-        Welcome {name}! ✨
-    Thanks for use own service.
+        👋 Welcome {name}! ✨
 
-    This bot can send files to your Kindle.
-    The maximum file size is 25 MB.
+    🙆‍♀️ Thanks for use own service. 🙆‍♀️
 
-    1️⃣ Setup your Kindle account with this command:
+    ➡️This bot can send files to your Kindle.
+    📛The maximum file size is 25 MB.
+
+    ✔️ Setup your Kindle account with this command:
     /email YourEmail@kindle.com
 
-    2️⃣ Go to your https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_surl_1#/home/settings/payment&context=Amazon Amazon account→ Preferences tab → Personal Document Settings and add send2kindle.ncsc@gmail.com to approved e-mail list (no mistake, you need to approve the whole domain)
+    ✔️ Go to your https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_surl_1#/home/settings/payment&context=Amazon Amazon account→ Preferences tab → Personal Document Settings and add send2kindle.ncsc@gmail.com to approved e-mail list (no mistake, you need to approve the whole domain)
 
     👆 This is necessary step to allow your Kindle account to receive files!
 
-    3️⃣ All set up! 🎉
+    👏 This is all set up! 🎉
 
-    This bot support extensions .pdb, .mobi, .asw3 .epub  .chm .djvu .txt .html .docx .cbr .fb2 .rtf .odt
+    ✔️ This bot support extensions .pdb, .mobi, .asw3 .epub  .chm .djvu .txt .html .docx .cbr .fb2 .rtf .odt
 
-    Syntax
+    👉Syntax 👀
     1. Help: /help
     2. Register/ update mail: /email your_kindl_email@kindle.com
     4. Type and send message to search book
