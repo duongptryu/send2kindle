@@ -1,12 +1,12 @@
 import os
 
 COMMAND_LIST = ["/help", "/email", "/GET"]
-MONGO_URL = os.environ('mongo_url')
+MONGO_URL = os.environ['mongo_url']
 BOT_NAME = "Send2Kindle"
-EMAIL = os.environ('email')
-PASSWORD = os.environ('password')
+EMAIL = os.environ['email']
+PASSWORD = os.environ['password']
 AVATAR = "https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg"
-TOKEN = os.environ('token')
+TOKEN = os.environ['token']
 
 EXT_LIST = ['epub', 'fb2', 'cbz', 'cbr', 'mobi', 'pdf', 'docx', 'html', 'txt', 'odt', 'chm', 'djvu', 'rtf']
 
