@@ -11,6 +11,7 @@ from functions.registration import registration_update
 from functions.download import pre_download
 from functions.guide import guide
 from functions.process_file_send_by_user import process
+from functions.get_info import get_info
 
 from viberbot.api.viber_requests import ViberConversationStartedRequest
 from viberbot.api.viber_requests import ViberFailedRequest
@@ -75,6 +76,8 @@ async def incoming(request: Request, response: Response, sig: str,
                                                 viber)
                     elif syntax[0] == '/GET':
                         background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
+                    elif syntax[0] == '/info':
+                        background_tasks.add_task(get_info, viber, viber_request)
                 else:
                     viber.send_messages(
                             viber_request.sender.id,
