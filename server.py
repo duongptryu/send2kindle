@@ -69,7 +69,7 @@ async def incoming(request: Request, response: Response, sig: str,
                     elif len(syntax) < 2:
                         viber.send_messages(
                             viber_request.sender.id,
-                            TextMessage(text="Need to have valid value"))
+                            TextMessage(text="Must have valid values"))
                     elif syntax[0] == '/email':
                         background_tasks.add_task(registration_update, viber_request,
                                                 viber)
@@ -78,7 +78,7 @@ async def incoming(request: Request, response: Response, sig: str,
                 else:
                     viber.send_messages(
                             viber_request.sender.id,
-                            TextMessage(text="Please wait a seconds, we are processing"))
+                            TextMessage(text="Please wait a moment, we are working on it"))
                     background_tasks.add_task(search, message, viber_request, background_tasks, viber)
             else:
                 viber.send_messages(

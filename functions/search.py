@@ -17,20 +17,20 @@ def search(message, viber_request, background_tasks, viber):
                 viber_request.sender.id,
                 TextMessage(
                     text=
-                    "Account didn't registration with kindle mail. Please registration with syntax: \n /email yourkindlemail@kindle.com"
+                    "Account not registered by kindle mail. Please register with the syntax: \n /email yourkindlemail@kindle.com"
                 ))
         if check_status(user) == False:
             return viber.send_messages(
                 viber_request.sender.id,
                 TextMessage(
                     text=
-                    "Please comeback later, We are working on your previous request"
+                    "Please come back later, We are working on your previous request"
                 ))
         viber.send_messages(
             viber_request.sender.id,
             TextMessage(
                 text=
-                f"Please wait a seconds, we are searching the book with title '{message}'"
+                f"Please wait a moment, we are looking for the book with the title'{message}'"
             ))
         increase_process(user)
     except Exception as e:
@@ -133,6 +133,6 @@ def search(message, viber_request, background_tasks, viber):
             viber_request.sender.id,
             TextMessage(
                 text=
-                "Click to GET button to get book to the kindle mail"
+                "Click to GET button to receive book to the your kindle mail"
             ))
     decrease_process(user)
