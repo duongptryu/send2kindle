@@ -1,6 +1,6 @@
 import os
 
-COMMAND_LIST = ["/help", "/email", "/GET", "/info"]
+COMMAND_LIST = ["/help", "/email", "/get", "/info"]
 MONGO_URL = os.environ['mongo_url']
 BOT_NAME = "Send2Kindle"
 EMAIL = os.environ['email']
