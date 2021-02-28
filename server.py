@@ -67,6 +67,8 @@ async def incoming(request: Request, response: Response, sig: str,
                 if syntax[0].lower() in config.COMMAND_LIST:
                     if syntax[0].lower() == "/help":
                         guide(viber, viber_request)
+                    elif syntax[0].lower() == '/info':
+                        background_tasks.add_task(get_info, viber, viber_request)
                     elif len(syntax) < 2:
                         viber.send_messages(
                             viber_request.sender.id,
@@ -76,8 +78,6 @@ async def incoming(request: Request, response: Response, sig: str,
                                                 viber)
                     elif syntax[0].lower() == '/GET':
                         background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
-                    elif syntax[0].lower() == '/info':
-                        background_tasks.add_task(get_info, viber, viber_request)
                 else:
                     viber.send_messages(
                             viber_request.sender.id,
