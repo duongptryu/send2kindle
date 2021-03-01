@@ -91,7 +91,7 @@ async def incoming(request: Request, response: Response, sig: str,
 
     elif isinstance(viber_request, ViberConversationStartedRequest):
         viber.send_messages(viber_request.user.id,
-                            [TextMessage(text=config.MESSAGE_GUIDE(viber_request.sender.name))])
+                            [TextMessage(text=config.MESSAGE_GUIDE("broooo"))])
     elif isinstance(viber_request, ViberSubscribedRequest):
         viber.send_messages(viber_request.get_user.id,
                             [TextMessage(text="Thanks for subscribing!")])
