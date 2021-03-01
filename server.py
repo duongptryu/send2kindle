@@ -57,43 +57,35 @@ async def incoming(request: Request, response: Response, sig: str,
     viber_request = viber.parse_request(data)
     check_time(viber_request)
     if isinstance(viber_request, ViberMessageRequest):
-        try:
-            if viber_request.message.media:
+            if hasattr(viber_request.message, 'media'):
                 background_tasks.add_task(process,viber, viber_request)
-        except:
-            try:
-                if viber_request.message.sticker_id:
-                    viber.send_messages(
-                                viber_request.sender.id,
-                                TextMessage(text="Invalid value, please input again, use '/help' for help"))
-            except:
-                if viber_request.message.text:
-                    message = viber_request.message.text
-                    syntax = message.split(" ")
-                    
-                    if syntax[0].lower() in config.COMMAND_LIST:
-                        if syntax[0].lower() == "/help":
-                            guide(viber, viber_request)
-                        elif syntax[0].lower() == '/info':
-                            background_tasks.add_task(get_info, viber, viber_request)
-                        elif len(syntax) < 2:
-                            viber.send_messages(
-                                viber_request.sender.id,
-                                TextMessage(text="Must have valid values"))
-                        elif syntax[0].lower() == '/email':
-                            background_tasks.add_task(registration_update, viber_request,
-                                                    viber)
-                        elif syntax[0].lower() == '/get':
-                            background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
-                    else:
+            elif hasattr(viber_request.message, 'text'):
+                message = viber_request.message.text
+                syntax = message.split(" ")
+                
+                if syntax[0].lower() in config.COMMAND_LIST:
+                    if syntax[0].lower() == "/help":
+                        guide(viber, viber_request)
+                    elif syntax[0].lower() == '/info':
+                        background_tasks.add_task(get_info, viber, viber_request)
+                    elif len(syntax) < 2:
                         viber.send_messages(
-                                viber_request.sender.id,
-                                TextMessage(text="Please wait a moment, we are working on it"))
-                        background_tasks.add_task(search, message, viber_request, background_tasks, viber)
+                            viber_request.sender.id,
+                            TextMessage(text="Must have valid values"))
+                    elif syntax[0].lower() == '/email':
+                        background_tasks.add_task(registration_update, viber_request,
+                                                viber)
+                    elif syntax[0].lower() == '/get':
+                        background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
                 else:
                     viber.send_messages(
-                                viber_request.sender.id,
-                                TextMessage(text="Invalid input, please try again, use '/help' to help"))
+                            viber_request.sender.id,
+                            TextMessage(text="Please wait a moment, we are working on it"))
+                    background_tasks.add_task(search, message, viber_request, background_tasks, viber)
+            else:
+                viber.send_messages(
+                            viber_request.sender.id,
+                            TextMessage(text="Invalid input, please try again, use '/help' to help"))
 
     elif isinstance(viber_request, ViberConversationStartedRequest):
         viber.send_messages(viber_request.user.id,

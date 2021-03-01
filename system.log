@@ -5392,3 +5392,123 @@ Finished server process [8456]
 Task was destroyed but it is pending!
 task: <Task pending name='Task-2' coro=<LifespanOn.main() running at c:\programdata\miniconda3\lib\site-packages\uvicorn\lifespan\on.py:55> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001F083669D00>()]>>
 ASGI 'lifespan' protocol appears unsupported.
+Started server process [12924]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Shutting down
+Waiting for application shutdown.
+Application shutdown complete.
+Finished server process [12924]
+Started server process [11236]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+received request. post data: b'{"event":"webhook","timestamp":1614593974138,"chat_hostname":"SN-CHAT-13_","message_token":5547118865460654580}'
+parsing request
+parsed request=event_type=webhook, timestamp=1614593974138
+received request. post data: b'{"event":"message","timestamp":1614593978802,"chat_hostname":"SN-CHAT-05_","message_token":5547118885745404630,"sender":{"id":"U5csY+SnVbjaudzIMMRC0g==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=uqFuQk7SJ91ENPJMyIhHJwfCH0Ei_ezVQPr9jpTShYIdvgSrnaJ2yWa-vUUNvjQQMZTapJ1L8HXl8L-4lWHTv7IbNCVRK96Qbfh7r_fM0NR_UwGQ-zoSdnD_erbmeGJOBXf2VQ&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"asdasd","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614593978802, message_token=5547118885745404630, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=uqFuQk7SJ91ENPJMyIhHJwfCH0Ei_ezVQPr9jpTShYIdvgSrnaJ2yWa-vUUNvjQQMZTapJ1L8HXl8L-4lWHTv7IbNCVRK96Qbfh7r_fM0NR_UwGQ-zoSdnD_erbmeGJOBXf2VQ&fltp=jpg&imsz=0000, id=U5csY+SnVbjaudzIMMRC0g==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=asdasd], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a moment, we are working on it], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': 'Please wait a moment, we are working on it', 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a moment, we are looking for the book with the title'asdasd'], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': "Please wait a moment, we are looking for the book with the title'asdasd'", 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614593982634,"chat_hostname":"SN-CHAT-05_","message_token":5547118899879105579,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614593982634, message_token=5547118899879105579, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614593982637,"chat_hostname":"SN-CHAT-05_","message_token":5547118899879105579,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614593982637, message_token=5547118899879105579, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614593982719,"chat_hostname":"SN-CHAT-04_","message_token":5547118899879105579,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614593982719, message_token=5547118899879105579, user_id=U5csY+SnVbjaudzIMMRC0g==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Starting new HTTP connection (1): gen.lib.rus.ec:80
+received request. post data: b'{"event":"seen","timestamp":1614593983991,"chat_hostname":"SN-CHAT-05_","message_token":5547118905553993882,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614593983991, message_token=5547118905553993882, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614593983994,"chat_hostname":"SN-CHAT-05_","message_token":5547118905553993882,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614593983994, message_token=5547118905553993882, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614593984069,"chat_hostname":"SN-CHAT-04_","message_token":5547118905553993882,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614593984069, message_token=5547118905553993882, user_id=U5csY+SnVbjaudzIMMRC0g==]
+http://gen.lib.rus.ec:80 "GET /search.php?req=asdasd&column=title HTTP/1.1" 301 178
+Starting new HTTP connection (1): libgen.rs:80
+http://libgen.rs:80 "GET /search.php?req=asdasd&column=title HTTP/1.1" 200 None
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=No result for search asdasd. Please try again, use '/help' to help], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': "No result for search asdasd. Please try again, use '/help' to help", 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"delivered","timestamp":1614593996353,"chat_hostname":"SN-CHAT-05_","message_token":5547118957265575486,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614593996353, message_token=5547118957265575486, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"seen","timestamp":1614593996350,"chat_hostname":"SN-CHAT-05_","message_token":5547118957265575486,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614593996350, message_token=5547118957265575486, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614593996464,"chat_hostname":"SN-CHAT-04_","message_token":5547118957265575486,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614593996464, message_token=5547118957265575486, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"message","timestamp":1614594001008,"chat_hostname":"SN-CHAT-05_","message_token":5547118978712152690,"sender":{"id":"U5csY+SnVbjaudzIMMRC0g==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=uqFuQk7SJ91ENPJMyIhHJwfCH0Ei_ezVQPr9jpTShYIdvgSrnaJ2yWa-vUUNvjQQMZTapJ1L8HXl8L-4lWHTv7IbNCVRK96Qbfh7r_fM0NR_UwGQ-zoSdnD_erbmeGJOBXf2VQ&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"text":"(mwah)(silly)(sick)(moa)","type":"text"},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614594001008, message_token=5547118978712152690, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=uqFuQk7SJ91ENPJMyIhHJwfCH0Ei_ezVQPr9jpTShYIdvgSrnaJ2yWa-vUUNvjQQMZTapJ1L8HXl8L-4lWHTv7IbNCVRK96Qbfh7r_fM0NR_UwGQ-zoSdnD_erbmeGJOBXf2VQ&fltp=jpg&imsz=0000, id=U5csY+SnVbjaudzIMMRC0g==, country=VN, language=vi-VN, api_version=8, message=TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=(mwah)(silly)(sick)(moa)], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a moment, we are working on it], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': 'Please wait a moment, we are working on it', 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Please wait a moment, we are looking for the book with the title'(mwah)(silly)(sick)(moa)'], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': "Please wait a moment, we are looking for the book with the title'(mwah)(silly)(sick)(moa)'", 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+received request. post data: b'{"event":"seen","timestamp":1614594003040,"chat_hostname":"SN-CHAT-05_","message_token":5547118985396774929,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614594003040, message_token=5547118985396774929, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614594003041,"chat_hostname":"SN-CHAT-05_","message_token":5547118985396774929,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614594003041, message_token=5547118985396774929, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614594003124,"chat_hostname":"SN-CHAT-04_","message_token":5547118985396774929,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614594003124, message_token=5547118985396774929, user_id=U5csY+SnVbjaudzIMMRC0g==]
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Starting new HTTP connection (1): gen.lib.rus.ec:80
+received request. post data: b'{"event":"delivered","timestamp":1614594004448,"chat_hostname":"SN-CHAT-05_","message_token":5547118991281383521,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614594004448, message_token=5547118991281383521, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"seen","timestamp":1614594004449,"chat_hostname":"SN-CHAT-05_","message_token":5547118991281383521,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614594004449, message_token=5547118991281383521, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614594004549,"chat_hostname":"SN-CHAT-04_","message_token":5547118991281383521,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614594004549, message_token=5547118991281383521, user_id=U5csY+SnVbjaudzIMMRC0g==]
+http://gen.lib.rus.ec:80 "GET /search.php?req=(mwah)(silly)(sick)(moa)&column=title HTTP/1.1" 301 178
+Starting new HTTP connection (1): libgen.rs:80
+received request. post data: b'{"event":"message","timestamp":1614594013803,"chat_hostname":"SN-CHAT-05_","message_token":5547119032374078126,"sender":{"id":"U5csY+SnVbjaudzIMMRC0g==","name":"Phan Tung Duong","avatar":"https://media-direct.cdn.viber.com/download_photo?dlid=uqFuQk7SJ91ENPJMyIhHJwfCH0Ei_ezVQPr9jpTShYIdvgSrnaJ2yWa-vUUNvjQQMZTapJ1L8HXl8L-4lWHTv7IbNCVRK96Qbfh7r_fM0NR_UwGQ-zoSdnD_erbmeGJOBXf2VQ&fltp=jpg&imsz=0000","language":"vi-VN","country":"VN","api_version":8},"message":{"type":"sticker","media":"http://content.cdn.viber.com/stickers/100/40100/00040108.png","sticker_id":40108},"silent":false}'
+parsing request
+parsed request=ViberMessageRequest [event_type=message, timestamp=1614594013803, message_token=5547119032374078126, sender=UserProfile[name=Phan Tung Duong, avatar=https://media-direct.cdn.viber.com/download_photo?dlid=uqFuQk7SJ91ENPJMyIhHJwfCH0Ei_ezVQPr9jpTShYIdvgSrnaJ2yWa-vUUNvjQQMZTapJ1L8HXl8L-4lWHTv7IbNCVRK96Qbfh7r_fM0NR_UwGQ-zoSdnD_erbmeGJOBXf2VQ&fltp=jpg&imsz=0000, id=U5csY+SnVbjaudzIMMRC0g==, country=VN, language=vi-VN, api_version=8, message=StickerMessage [tracking_data=None, keyboard=None, min_api_version=None, sticker_id=40108], chat_id=None, reply_type=None, silent=False]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=Invalid input, please try again, use '/help' to help], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': "Invalid input, please try again, use '/help' to help", 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+received request. post data: b'{"event":"seen","timestamp":1614594016697,"chat_hostname":"SN-CHAT-05_","message_token":5547119042732907460,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberSeenRequest [event_type=seen, timestamp=1614594016697, message_token=5547119042732907460, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614594016697,"chat_hostname":"SN-CHAT-05_","message_token":5547119042732907460,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614594016697, message_token=5547119042732907460, user_id=U5csY+SnVbjaudzIMMRC0g==]
+received request. post data: b'{"event":"delivered","timestamp":1614594016829,"chat_hostname":"SN-CHAT-04_","message_token":5547119042732907460,"user_id":"U5csY+SnVbjaudzIMMRC0g=="}'
+parsing request
+parsed request=ViberDeliveredRequest [event_type=delivered, timestamp=1614594016829, message_token=5547119042732907460, user_id=U5csY+SnVbjaudzIMMRC0g==]
+http://libgen.rs:80 "GET /search.php?req=(mwah)(silly)(sick)(moa)&column=title HTTP/1.1" 200 None
+Shutting down
+Waiting for background tasks to complete. (CTRL+C to force quit)
+Finished server process [11236]
+going to send messages: TextMessage [tracking_data=None, keyboard=None, min_api_version=None, text=No result for search (mwah)(silly)(sick)(moa). Please try again, use '/help' to help], to: U5csY+SnVbjaudzIMMRC0g==
+going to send message: {'type': 'text', 'text': "No result for search (mwah)(silly)(sick)(moa). Please try again, use '/help' to help", 'auth_token': '4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b', 'receiver': 'U5csY+SnVbjaudzIMMRC0g==', 'sender': {'name': 'Send2Kindle', 'avatar': 'https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg'}}
+Starting new HTTPS connection (1): chatapi.viber.com:443
+https://chatapi.viber.com:443 "POST /pa/send_message HTTP/1.1" 200 100
+Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<LifespanOn.main() running at c:\programdata\miniconda3\lib\site-packages\uvicorn\lifespan\on.py:55> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001D4EA639EB0>()]>>
+ASGI 'lifespan' protocol appears unsupported.

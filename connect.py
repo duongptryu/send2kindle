@@ -6,4 +6,4 @@ bot_configuration = BotConfiguration(
 	auth_token="4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b"
 )
 viber = Api(bot_configuration)
-viber.set_webhook("https://a7d7db97f149.ngrok.io")
+viber.set_webhook("https://3ea5bfafb6bb.ngrok.io")

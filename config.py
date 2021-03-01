@@ -6,6 +6,7 @@ EMAIL = os.environ['email']
 PASSWORD = os.environ['password']
 TOKEN = os.environ['token']
 
+
 BOT_NAME = "Send2Kindle"
 
 AVATAR = "https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg"
