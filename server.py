@@ -91,12 +91,12 @@ async def incoming(request: Request, response: Response, sig: str,
 
     elif isinstance(viber_request, ViberConversationStartedRequest):
         viber.send_messages(viber_request.user.id,
-                            [TextMessage(text=config.MESSAGE_GUIDE)])
+                            [TextMessage(text=config.MESSAGE_GUIDE(viber_request.sender.name))])
     elif isinstance(viber_request, ViberSubscribedRequest):
         viber.send_messages(viber_request.get_user.id,
                             [TextMessage(text="Thanks for subscribing!")])
         viber.send_messages(viber_request.user.id,
-                            [TextMessage(text=config.MESSAGE_GUIDE)])
+                            [TextMessage(text=config.MESSAGE_GUIDE(viber_request.sender.name))])
     elif isinstance(viber_request, ViberFailedRequest):
         logger.warn("client failed receiving message. failure: {0}".format(
             viber_request))
