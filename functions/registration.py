@@ -23,7 +23,7 @@ def registration_update(viber_request, viber):
             viber.send_messages(viber_request.sender.id, TextMessage(text="Some errors, the mail cannot be updated. We will fix it as soon as possible"))
     except User.DoesNotExist:
         try:
-            user = User(viber_id=viber_request.sender.id,kindle_mail=kindle_email, search_temporary=[1], history=[1], status=0)
+            user = User(viber_id=viber_request.sender.id,kindle_mail=kindle_email, search_temporary=[1], time=0, status=0)
             user.save()
             viber.send_messages(viber_request.sender.id, TextMessage(text="Successful registration with kindle mail " + kindle_email))
         except:

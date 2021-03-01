@@ -12,6 +12,7 @@ from functions.download import pre_download
 from functions.guide import guide
 from functions.process_file_send_by_user import process
 from functions.get_info import get_info
+from functions.small_check import check_time
 
 from viberbot.api.viber_requests import ViberConversationStartedRequest
 from viberbot.api.viber_requests import ViberFailedRequest
@@ -54,7 +55,7 @@ async def incoming(request: Request, response: Response, sig: str,
 
     # this library supplies a simple way to receive a request object
     viber_request = viber.parse_request(data)
-
+    check_time(viber_request)
     if isinstance(viber_request, ViberMessageRequest):
         try:
             if viber_request.message.media:

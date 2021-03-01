@@ -12,7 +12,7 @@ class User(MongoModel):
     viber_id = fields.CharField(primary_key=True)
     kindle_mail = fields.EmailField()
     search_temporary = fields.ListField()
-    history = fields.ListField()
+    time = fields.FloatField()
     status = fields.IntegerField()
 
     class Meta:

@@ -22,12 +22,14 @@ def download(book_title, book_ext, book_size, viber_request, url_download, backg
         # try:
         # except Exception as e:
         #     import pdb; pdb.set_trace()
+        #open file
         with open(name_book, 'wb') as f:
             f.write(res.content)
         viber.send_messages(viber_request.sender.id, TextMessage(text="Downloaded, we're working on sending you the book."))
         size = book_size.split(" ")
         try:
             name = name_book.split("_")[0] + "." + name_book.split(".")[-1]
+            #send  file via viber
             viber.send_messages(viber_request.sender.id, FileMessage(media="file:///" + os.getcwd() + name_book, size=os.path.getsize(name_book), file_name=name))
         except:
             viber.send_messages(viber_request.sender.id, TextMessage(text="Cannot send files via viber"))
