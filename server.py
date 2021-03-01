@@ -100,6 +100,6 @@ async def incoming(request: Request, response: Response, sig: str,
     elif isinstance(viber_request, ViberFailedRequest):
         logger.warn("client failed receiving message. failure: {0}".format(
             viber_request))
-
+#
     response.status_code = 200
     return response
