@@ -76,7 +76,7 @@ async def incoming(request: Request, response: Response, sig: str,
                     elif syntax[0].lower() == '/email':
                         background_tasks.add_task(registration_update, viber_request,
                                                 viber)
-                    elif syntax[0].lower() == '/GET':
+                    elif syntax[0].lower() == '/get':
                         background_tasks.add_task(pre_download,message,viber_request, background_tasks, viber)
                 else:
                     viber.send_messages(
