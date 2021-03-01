@@ -3,7 +3,7 @@ from viberbot.api.bot_configuration import BotConfiguration
 bot_configuration = BotConfiguration(
 	name="Send2Kindle",
 	avatar="https://botostore.com/netcat_files/6/7/preview_148877_1587232924.jpg",
-	auth_token="4cf75ed4c6e7d113-871283930a94f231-6fb287e6e603dfca"
+	auth_token="4cf23444dd27d24e-4705c501d4209f35-dc9c3007b40de69b"
 )
 viber = Api(bot_configuration)
-viber.set_webhook("https://send2kindle-ncsc.herokuapp.com/")
+viber.set_webhook("https://a7d7db97f149.ngrok.io")
