@@ -57,6 +57,7 @@ async def incoming(request: Request, response: Response, sig: str,
     viber_request = viber.parse_request(data)
     check_time(viber_request)
     if isinstance(viber_request, ViberMessageRequest):
+            # import pdb; pdb.set_trace()
             if hasattr(viber_request.message, 'media'):
                 background_tasks.add_task(process,viber, viber_request)
             elif hasattr(viber_request.message, 'text'):

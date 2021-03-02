@@ -10,8 +10,9 @@ import config
 from fastapi import HTTPException
 from functions.send_mail import send_mail
 from functions.convert import convert_to_mobi
+import base64
 
-def download(book_title, book_ext, book_size, viber_request, url_download, background_tasks, viber, user):
+def download(book_title, book_ext, book_size, url, viber_request, url_download, background_tasks, viber, user):
     url = url_download
     res = requests.get(url, allow_redirects=True)
     # import pdb; pdb.set_trace()
@@ -30,7 +31,7 @@ def download(book_title, book_ext, book_size, viber_request, url_download, backg
         try:
             name = name_book.split("_")[0] + "." + name_book.split(".")[-1]
             #send  file via viber
-            viber.send_messages(viber_request.sender.id, FileMessage(media="file:///" + os.getcwd() + name_book, size=os.path.getsize(name_book), file_name=name))
+            viber.send_messages(viber_request.sender.id, FileMessage(media=url, size=os.path.getsize(name_book), file_name=name))
         except:
             viber.send_messages(viber_request.sender.id, TextMessage(text="Cannot send files via viber"))
 
@@ -86,7 +87,7 @@ def pre_download(message,viber_request, background_tasks, viber):
         urls = re.findall(r'href=[\'"]?([^\'" >]+)', res)
         url_download = urls[1]
         try:
-            name_book = download(book['Title'],book['Extension'], book['Size'], viber_request, url_download, background_tasks, viber, user)
+            name_book = download(book['Title'],book['Extension'], book['Size'], book['Mirror_1'], viber_request, url_download, background_tasks, viber, user)
 
             if book['Extension'] in config.CONVERT_LIST:
                 try:

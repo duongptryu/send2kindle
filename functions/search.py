@@ -9,7 +9,7 @@ s = LibgenSearch()
 
 
 def search(message, viber_request, background_tasks, viber):
-    #check user register
+
     try:
         user = check_register(viber_request)
         if user == None:
@@ -36,16 +36,6 @@ def search(message, viber_request, background_tasks, viber):
     except Exception as e:
         return viber.send_messages(viber_request.sender.id,
                                    TextMessage(text="Error with check user"))
-    # background_tasks.add_task(clear_search, user)
-
-    # filters = {
-    #     # "Author": "Brian Hatch",
-    #     # "Extension": Extension,
-    #     # "Publisher": Publisher,
-    #     # "Year": Year,
-    #     # "Language": Language,
-    #     # "Pages": 2
-    # }
     title = message.strip()
 #
     try:
